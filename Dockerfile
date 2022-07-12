@@ -1,6 +1,6 @@
 FROM ber4tbey/disowen:latest
 
-ENV GITHUB_REPO_URL=https://github.com/Ber4tbey/Lavanstax
+ENV LAVANSTAX_REPO_URL=https://github.com/Ber4tbey/Lavanstax
 #WORKDIR /root/DisOwen/
 #RUN npm install 
 #RUN npm install supervisor -g
