@@ -60,8 +60,8 @@ This project is open source so all the codes are clear. Neither less nor more; y
 ```
 Due to Userbot; Your İnstagram account may be banned.
 This is an open source project, you are responsible for everything you do. 
-Absolutely, Owen executives do not accept responsibility.
-By establishing the Owen, you are deemed to have accepted these responsibilities.
+Absolutely, Lavanstax executives do not accept responsibility.
+By establishing the Lavanstax, you are deemed to have accepted these responsibilities.
 ```
 
 ## Developers
