@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://i.hizliresim.com/60dgunt.jpg" width="200" height="200">
   <h1>Lavanstax</h1>
 </div>
 <p align="center">
@@ -72,7 +71,7 @@ By establishing the Owen, you are deemed to have accepted these responsibilities
 [Ber4tbey](https://t.me/Ber4tbey) |  
 Author, Base, Bug Fixes, Modules  | 
 ## Thanks To
-- [@androz2091](https://github.com/androz2091) for coded [İnstagram.js](https://github.com/androz2091/İnsta.js) 
+- [@androz2091](https://github.com/Androz2091) for coded [İnstagram.js](https://github.com/Androz2091/insta.js) 
 - Translators
 ## Contact
 Email: ```beratbeywinchester@gmail.com```
