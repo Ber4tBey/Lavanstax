@@ -1,0 +1,136 @@
+{
+    "__OWENJSON__": true,
+    "LANGUAGE": "Türkçe",
+    "LANGCODE": "tr",
+    "AUTHOR": "Ber4tbey",
+    "STRINGS": { 
+        "_owen": {
+                "COMMAND": "💻𝐋𝐚𝐯𝐚𝐧𝐬𝐭𝐚𝐱 𝐊𝐨𝐦𝐮𝐭 𝐋𝐢𝐬𝐭𝐞𝐬𝐢",
+                "NOFOUND": "💻 Lütfen bir Lavanstax modülü belirtin!",
+                "COMINFO": "💫𝐋𝐮̈𝐭𝐟𝐞𝐧 𝐡𝐚𝐧𝐠𝐢 𝐋𝐚𝐯𝐚𝐧𝐬𝐭𝐚𝐱 𝐦𝐨𝐝𝐮̈𝐥𝐮̈ 𝐢𝐜̧𝐢𝐧 𝐲𝐚𝐫𝐝𝐢𝐦 𝐢𝐬𝐭𝐞𝐝𝐢𝐠̆𝐢𝐧𝐢𝐳𝐢 𝐛𝐞𝐥𝐢𝐫𝐭𝐢𝐧 ! 𝐊𝐮𝐥𝐥𝐚𝐧𝐢𝐦: .lavanstax <modül adı>",
+                "COMMAND1": "🔧 𝐊𝐨𝐦𝐮𝐭:",
+                "ALTERNATE": "🌀 𝐀𝐜̧𝐢𝐤𝐥𝐚𝐦𝐚:",
+                "USE": "🧿𝐊𝐮𝐥𝐥𝐚𝐧𝐢𝐦:",
+                "DESC": "Tüm komutlarımı veya belirli bir komutla ilgili bilgileri listeler.",
+                "OWENIN": "[komut ismi]"
+            
+        },
+        "_plugin": {
+            "INSTALL_DESC": "Plugin yükler.",
+            "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
+            "INVALID_URL": "𝐿𝑢̈𝑡𝑓𝑒𝑛 𝑏𝑖𝑟 𝑔𝑒𝑐̧𝑒𝑟𝑙𝑖 𝑈𝑅𝐿 𝑔𝑖𝑟𝑖𝑛𝑖𝑧!",
+            "INVALID_PLUGIN": "❌ 𝑃𝑙𝑢𝑔𝑖𝑛𝑖𝑛𝑖𝑧 ℎ𝑎𝑡𝑎𝑙𝑖!\n𝐻𝑎𝑡𝑎:",
+            "INSTALLED": "✅ Plugin başarılı bir şekilde yüklendi!",
+            "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
+            "INSTALLED_FROM_REMOTE": "Dışarıdan yüklediğiniz pluginler:\n",
+            "NO_PLUGIN": "Dışarıdan hiç plugin yüklememişsiniz!",
+            "REMOVE_DESC": "Plugin kaldırır.",
+            "NEED_PLUGIN": "𝐿𝑢̈𝑡𝑓𝑒𝑛 𝑏𝑖𝑟 𝑃𝑙𝑢𝑔𝑖𝑛 𝑔𝑖𝑟𝑖𝑛𝑖𝑧! 𝑂̈𝑟𝑛𝑒𝑘: .plugin test",
+            "NOT_FOUND_PLUGIN": "𝐵𝑜̈𝑦𝑙𝑒 𝑏𝑖𝑟 𝑝𝑙𝑢𝑔𝑖𝑛 𝑏𝑒𝑙𝑘𝑖 𝑦𝑢̈𝑘𝑙𝑒𝑑𝑖𝑛𝑖𝑧, 𝑏𝑒𝑙𝑘𝑖 𝑑𝑒 𝑦𝑢̈𝑘𝑙𝑒𝑚𝑒𝑑𝑖𝑛𝑖𝑧. 𝐴𝑚𝑎 𝑠̧𝑢 𝑎𝑛 𝑜𝑙𝑚𝑎𝑑𝑖𝑔̆𝑖 𝑘𝑒𝑠𝑖𝑛.",
+            "DELETED": "✅ 𝑀𝑜𝑑𝑢̈𝑙 𝑏𝑎𝑠̧𝑎𝑟𝑖𝑦𝑙𝑎 𝑠𝑖𝑙𝑖𝑛𝑑𝑖! 𝐷𝑒𝑔̆𝑖𝑠̧𝑖𝑘𝑙𝑖𝑘𝑙𝑒𝑟𝑖𝑛 𝑢𝑦𝑔𝑢𝑙𝑎𝑛𝑚𝑎𝑠𝑖 𝑖𝑐̧𝑖𝑛 𝑦𝑒𝑛𝑖𝑑𝑒𝑛 𝑏𝑎𝑠̧𝑙𝑎𝑡𝑚𝑎𝑛𝑖𝑧 𝑔𝑒𝑟𝑒𝑘𝑚𝑒𝑘𝑡𝑒𝑑𝑖𝑟."
+        },
+        "admin": {
+            "BAN_DESC": "Gruptan kişi banlar. Komutun yanına kişiyi etiketleyin.",
+            "IM_NOT_ADMIN": "𝐵𝑢 𝑔𝑟𝑢𝑝𝑡𝑎 𝑎𝑑𝑚𝑖𝑛 𝑑𝑒𝑔̆𝑖𝑙𝑖𝑚!",
+            "BANNED": "Gruptan çıkarıldı!",
+            "GIVE_ME_USER": "𝐵𝑎𝑛𝑎 𝑏𝑖𝑟 𝑘𝑢𝑙𝑙𝑎𝑛𝑖𝑐𝑖 𝑣𝑒𝑟!",
+            "NOT_BAN_ME": "Kendimi banlayamam!"
+        },
+        "afk": {
+            "IM_AFK": "Artık AFK'yım!",
+            "REASON": "Sebep:",
+            "LAST_SEEN": "Son Görülme",
+            "IM_NOT_AFK": "Artık AFK değilim!",
+            "HOUR": "saat",
+            "MINUTE": "dakika",
+            "SECOND": "saniye",
+            "AFK_STAT" : "Sahibim Şuan Afk",
+            "AFK_DESC": "Sizi AFK yapar."
+        },
+        
+        "spammer": {
+         "SPAMMER_DESC": "Spam atar örnek: **.spam 10 Merhaba",
+         "NEED_WRD": "Spam Yapabilmem için yazı girmelisini örnek: **.spam 10 Merhaba"
+        },
+
+        "heroku": {
+            "RESTART_DESC": "Lavanstax'i yeniden başlatın",
+            "RESTART_MSG": "Yeniden başlatılıyor...",
+            "DYNO_DESC": "Heroku dyno kullanımını kontrol edin",
+            "DYNO_TOTAL": "𝐓𝐨𝐩𝐥𝐚𝐦 𝐊𝐨𝐭𝐚",
+            "DYNO_USED": "𝐊𝐮𝐥𝐥𝐚𝐧𝐢𝐥𝐚𝐧 𝐤𝐨𝐭𝐚:",
+            "PERCENTAGE": "𝐘𝐮̈𝐳𝐝𝐞",
+            "DYNO_LEFT": "𝐊𝐚𝐥𝐚𝐧:",
+            "SETVAR_DESC": "Heroku'da kısa yolla config var ayarlar",
+            "SET_SUCCESS": "Başarıyla ayarlandı {} ➜ {}",
+            "KEY_VAL_MISSING": "Key veya Value eksik yazdınız.",
+            "INVALID": "Geçersiz key: value biçimi",
+            "GETVAR_DESC": "Heroku config var getirir.",
+            "DELVAR_DESC": "Heroku config var siler.",
+            "DEL_SUCCESS": "{} başarıyla silindi",
+            "NOT_FOUND": "Bu anahtar için sonuç bulunamadı"           
+        },
+        
+        
+        
+        
+        
+        "profile": {
+            "BLOCK_DESC": "Belirttiğiniz kullanıcıyı engeller.",
+            "UNBLOCK_DESC": "Belirttiğiniz kullanıcının engelini kaldırır.",
+            "BLOCKED": "engellendin",
+            "UNBLOCKED": "engelin kalktı",
+            "BLOCKED_UPPER": "Engellendin!",
+            "UNBLOCKED_UPPER": "Engelini kaldırdım.",
+            "NEED_USER": "Bana bir kullanıcı ver!"
+           
+            
+           
+        },
+        
+        "system_stats": {
+            "ALIVE_DESC": "Bot çalışıyor mu?",
+            "PING_DESC": "Botunuzun pingini ölçer."
+        },
+       
+        "updater": {
+            "MESSAGE_T_LONG": "Değişiklik sayısı çok fazla olduğu için dosya olarak gönderiyorum.",
+            "UPDATER_DESC": "Botunuzu günceller.",
+            "UPDATE": "𝐵𝑜𝑡𝑢𝑛𝑢𝑧 𝑡𝑎𝑚𝑎𝑚𝑒𝑛 𝑔𝑢̈𝑛𝑐𝑒𝑙!",
+            "NEW_UPDATE": "𝐵𝑜𝑡 𝑖𝑐̧𝑖𝑛 𝑦𝑒𝑛𝑖 𝑔𝑢̈𝑛𝑐𝑒𝑙𝑙𝑒𝑚𝑒 𝑚𝑒𝑣𝑐𝑢𝑡!\n\nDeğişiklikler:\n",
+            "UPDATE_NOW_DESC": "Güncelleme yapar.",
+            "UPDATING": "𝐺𝑢̈𝑛𝑐𝑒𝑙𝑙𝑒𝑚𝑒 𝑦𝑎𝑝𝑖𝑙𝑖𝑦𝑜𝑟...",
+            "INVALID_HEROKU": "❌ 𝐻𝑒𝑟𝑜𝑘𝑢 𝑏𝑖𝑙𝑔𝑖𝑙𝑒𝑟𝑖𝑛𝑖𝑧 𝑦𝑎𝑛𝑙𝑖𝑠̧!",
+            "UPDATED": "✅ 𝐺𝑢̈𝑛𝑐𝑒𝑙𝑙𝑒𝑚𝑒 𝑏𝑎𝑠̧𝑎𝑟𝑖𝑙𝑖 𝑜𝑙𝑑𝑢!",
+            "UPDATED_LOCAL": "✅ 𝐺𝑢̈𝑛𝑐𝑒𝑙𝑙𝑒𝑚𝑒 𝑏𝑎𝑠̧𝑎𝑟𝑖𝑙𝑖 𝑜𝑙𝑑𝑢!\n𝐷𝑒𝑔̆𝑖𝑠̧𝑖𝑘𝑙𝑖𝑘𝑙𝑒𝑟 𝑦𝑒𝑛𝑖𝑑𝑒𝑛 𝑏𝑎𝑠̧𝑙𝑎𝑡𝑚𝑎𝑛𝑖𝑧 𝑔𝑒𝑟𝑒𝑘𝑚𝑒𝑘𝑡𝑒𝑑𝑖𝑟."
+        },
+        "weather": {
+            "WEATHER_DESC": "Hava durumu getirir.",
+            "NEED_LOCATION": "𝐿𝑢̈𝑡𝑓𝑒𝑛 𝑏𝑖𝑟 𝑘𝑜𝑛𝑢𝑚 𝑦𝑎𝑧𝑖𝑛!\n𝑂̈𝑟𝑛𝑒𝑘: .weather İstanbul"
+            
+        },
+        "scrapers": {
+            "TRANSLATE_DESC": "Google çeviri ile çeviri yapar.",
+            "TRANSLATE_USAGE": ".trt tr it (Türkçeden İtalyaca Çeviri)",
+            "NEED_TR": "Çeviri yapabilmem için bir kelimeye ihtiyacım var örnek .trt hello",
+            "LANG": "Dil",
+            "FROM": "Çevirilen Dil",
+            "RESULT": "Çeviri",
+            "CURRENCY_ERROR": "```Sözdizimi hatası! Örnek: .currency 1 TRY USD```",
+            "INVALID_CURRENCY": "```Döviz dönüşümü yapılamadı, yanlış birim yazdınız!```",
+            "UNKNOWN_ERROR": "```Bir hata oluştu, döviz dönüşümü yapılamadı!```"
+            
+    
+        },
+        "vector": {
+            "VECTOR_DESC": "Tam fonksiyonel Vector özelliklerini aktif eder. Hesabınızı bir chatbota dönüştürün!",
+            "ALREADY_ON": "𝙑𝙚𝙘𝙩𝙤𝙧 yapay zekası halihazırda tüm fonksiyonları etkin.",
+            "ALREADY_OFF": "Vector yapay zekası halihazırda yarı fonksiyonel çalışıyor.",
+            "SUCC_ON": "𝙑𝙚𝙘𝙩𝙤𝙧, Tam Fonksiyonel Olarak Açıldı! Lütfen Biraz Bekleyin! ✅",
+            "SUCC_OFF": "Vector, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️",
+            "WR_CMD": "Lütfen sadece off veya on komutunu kullanın."
+        }
+
+    
+    }
+}

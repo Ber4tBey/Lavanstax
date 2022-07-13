@@ -1,0 +1,74 @@
+{
+  "name": "Lavanstax",
+  "description": "The world first İnstagram Userbot",
+  "repository": "https://github.com/Ber4tbey/Lavanstax",
+  "keywords": ["node", "İnstagram", "owen"],
+   "stack": "container",
+  
+  "env": {
+    "USERNAME": {
+      "description": "İnstagram kullanıcı adınız.",
+      "required": "true"
+    },
+    "PREFIX": {
+      "description": "Botun komutları algılaması için komut başlangıcı.",
+      "value": "."
+    },
+    
+   "LANGUAGE": {
+    "description": "Botunuzun dili (EN/TR/US)",
+    "required": "true",
+    "value": "TR"
+
+   },
+   "HEROKU_API_KEY": {
+    "description": "Heroku api keyiniz.",
+    "required": "true",
+    "value": ""
+
+   },
+   "HEROKU_APP_NAME": {
+    "description": "heroku app name",
+    "required": "true",
+    "value": ""
+
+   },
+   "PASSWORD": {
+    "description": "İnstagram şifreniz",
+    "required": "true",
+    "value": ""
+   },
+   "AFK_MESSAGE": {
+    "description": "Geçerli afk mesajınız",
+    "required": "true",
+    "value": "Hayat çok kısa, yapacak çok şey var...\nOnlardan birini yapıyorum.. Sahibim şuanda #AFK"
+   },
+   "BOTLOG_CHATID": {
+    "description": "Botlog chat ıd",
+    "required": "true",
+    "value": "0"
+   },
+   "SEND_READ": {
+    "description": "Bot mesajlara görüldü atsın mı?",
+    "required": "true",
+    "value": "false"
+   },
+   "PENDING_REQUEST": {
+   "description": "DM isteklerini otomatik onaylar",
+   "required": "true",
+   "value": "false"
+  },
+  "FOLLOW_SEND": {
+    "description": "Sizi takip etmeye başlayanlara dm den mesaj gönderir.",
+    "required": "true",
+    "value": "true"
+   }
+
+  },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }

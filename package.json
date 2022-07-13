@@ -1,0 +1,38 @@
+{
+  "name": "lavanstax",
+  "version": "0.0.1",
+  "description": "Lavanstax project - Makes it easy and fun to use İnstagram. Also first userbot for İnstagram",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@ber4tbey/insta.js": "^1.0.0",
+    "@discordjs/collection": "^0.1.6",
+    "chalk": "^4.1.0",
+    "download": "^8.0.0",
+    "fs": "0.0.1-security",
+    "got": "^11.8.3",
+    "heroku-client": "^3.1.0",
+    "https": "^1.0.0",
+    "langdetect": "^0.2.1",
+    "node-google-tts-api": "^1.1.1",
+    "quick.db": "^7.1.1",
+    "sequelize": "^6.15.0",
+    "simple-git": "^2.22.0",
+    "sqlite3": "^5.0.2",
+    "stream": "^0.0.2",
+    "superagent": "^3.8.2",
+    "translatte": "^3.0.1",
+    "ytdl-core": "^0.18.1"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "author": "Ber4tbey",
+  "contributors": [
+    "Ber4tbey <beratbey@ber4tbey.org> (https://github.com/Ber4tbey)"
+  ],
+  "license": "MIT"
+}

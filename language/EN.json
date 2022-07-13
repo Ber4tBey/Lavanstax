@@ -1,0 +1,115 @@
+{
+    "__OWENJSON__": true,
+    "LANGUAGE": "Türkçe",
+    "LANGCODE": "tr",
+    "AUTHOR": "Ber4tbey",
+    "STRINGS": { 
+        "_owen": {
+                "COMMAND": "💻𝐋𝐚𝐯𝐚𝐧𝐬𝐭𝐚𝐱 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭:",
+                "NOFOUND": "💻 Please specify an Owen module!",
+                "COMINFO": "⚡️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐩𝐞𝐜𝐢𝐟𝐲 𝐰𝐡𝐢𝐜𝐡 𝐎𝐰𝐞𝐧 𝐦𝐨𝐝𝐮𝐥𝐞 𝐲𝐨𝐮 𝐰𝐨𝐮𝐥𝐝 𝐥𝐢𝐤𝐞 𝐡𝐞𝐥𝐩 𝐰𝐢𝐭𝐡 ! 𝐔𝐬𝐚𝐠𝐞: .𝐥𝐚𝐯𝐚𝐧 <𝐦𝐨𝐝𝐮𝐥𝐞 𝐧𝐚𝐦𝐞>",
+                "COMMAND1": "🔧 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:",
+                "ALTERNATE": "🌀 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧:",
+                "USE": "🧿𝐔𝐬𝐚𝐠𝐞:",
+                "DESC": "Lists all my commands or information about a specific command."
+            
+        },
+        "_plugin": {
+            "INSTALL_DESC": "The plugin loads.",
+            "NEED_URL": "Please enter a URL! Sample:",
+            "INVALID_URL": "🧿𝑈𝑠𝑎𝑔𝑒",
+            "INVALID_PLUGIN": "❌ 𝑌𝑜𝑢𝑟 𝑝𝑙𝑢𝑔𝑖𝑛 𝑖𝑠 𝑓𝑎𝑢𝑙𝑡𝑦!\n𝐸𝑟𝑟𝑜𝑟:",
+            "INSTALLED": "*✅ Plugin installed successfully!*",
+            "PLUGIN_DESC": "Shows the plugins you have installed.",
+            "INSTALLED_FROM_REMOTE": "𝑃𝑙𝑢𝑔𝑖𝑛𝑠 𝑦𝑜𝑢 ℎ𝑎𝑣𝑒 𝑖𝑛𝑠𝑡𝑎𝑙𝑙𝑒𝑑 𝑒𝑥𝑡𝑒𝑟𝑛𝑎𝑙𝑙𝑦:\n",
+            "NO_PLUGIN": "𝑌𝑜𝑢 ℎ𝑎𝑣𝑒 𝑛𝑜𝑡 𝑖𝑛𝑠𝑡𝑎𝑙𝑙𝑒𝑑 𝑎𝑛𝑦 𝑒𝑥𝑡𝑒𝑟𝑛𝑎𝑙 𝑝𝑙𝑢𝑔𝑖𝑛𝑠!",
+            "REMOVE_DESC": "Removes the plugin.",
+            "NEED_PLUGIN": "𝑃𝑙𝑒𝑎𝑠𝑒 𝑒𝑛𝑡𝑒𝑟 𝑎 𝑃𝑙𝑢𝑔𝑖𝑛! 𝐸𝑥𝑎𝑚𝑝𝑙𝑒: .𝑝𝑙𝑢𝑔𝑖𝑛 test",
+            "NOT_FOUND_PLUGIN": "𝑀𝑎𝑦𝑏𝑒 𝑦𝑜𝑢 𝑖𝑛𝑠𝑡𝑎𝑙𝑙𝑒𝑑 𝑠𝑢𝑐ℎ 𝑎 𝑝𝑙𝑢𝑔𝑖𝑛, 𝑚𝑎𝑦𝑏𝑒 𝑦𝑜𝑢 𝑑𝑖𝑑𝑛'𝑡. 𝐵𝑢𝑡 𝑖𝑡 𝑐𝑒𝑟𝑡𝑎𝑖𝑛𝑙𝑦 𝑖𝑠𝑛'𝑡 𝑟𝑖𝑔ℎ𝑡 𝑛𝑜𝑤.",
+            "DELETED": "✅𝑀𝑜𝑑𝑢𝑙𝑒 𝑑𝑒𝑙𝑒𝑡𝑒𝑑 𝑠𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙𝑙𝑦! 𝑌𝑜𝑢 𝑚𝑢𝑠𝑡 𝑟𝑒𝑏𝑜𝑜𝑡 𝑓𝑜𝑟 𝑡ℎ𝑒 𝑐ℎ𝑎𝑛𝑔𝑒𝑠 𝑡𝑜 𝑡𝑎𝑘𝑒 𝑒𝑓𝑓𝑒𝑐𝑡."
+        },
+        "admin": {
+            "BAN_DESC": "Bans people from the group. Tag the person next to the command.",
+            "IM_NOT_ADMIN": "𝐼'𝑚 𝑛𝑜𝑡 𝑎𝑛 𝑎𝑑𝑚𝑖𝑛 𝑖𝑛 𝑡ℎ𝑖𝑠 𝑔𝑟𝑜𝑢𝑝!",
+            "BANNED": "removed from the group!",
+            "GIVE_ME_USER": "𝐺𝑖𝑣𝑒 𝑚𝑒 𝑎 𝑢𝑠𝑒𝑟!",
+            "NOT_BAN_ME": "I can't ban myself!"
+        },
+        "afk": {
+            "IM_AFK": "I'm AFK now!",
+            "REASON": "𝐑𝐞𝐚𝐬𝐨𝐧:",
+            "LAST_SEEN": "",
+            "IM_NOT_AFK": "I'm not AFK",
+            "HOUR": "hour",
+            "MINUTE": "mınute",
+            "SECOND": "second",
+            "AFK_STAT" : "I'm Afk Right Now",
+            "AFK_DESC": "It makes you AFK."
+            
+        },
+        
+        "spammer": {
+         "SPAMMER_DESC": "Spams example: **.spam 10 Hello",
+         "NEED_WRD": "You must enter a text so that I can spam. Example: **.spam 10 Hello**"
+        },
+
+        "heroku": {
+            "RESTART_DESC": "Restart DisOwen",
+            "RESTART_MSG": "𝑅𝑒𝑠𝑡𝑎𝑟𝑡𝑖𝑛𝑔...",
+            "DYNO_DESC": "Check heroku dyno usage",
+            "DYNO_TOTAL": "𝐓𝐨𝐭𝐚𝐥 𝐐𝐮𝐨𝐭𝐚:",
+            "DYNO_USED": "𝐐𝐮𝐨𝐭𝐚 𝐮𝐬𝐞𝐝:",
+            "PERCENTAGE": "𝐏𝐞𝐫𝐜𝐞𝐧𝐭",
+            "DYNO_LEFT": "𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠",
+            "SETVAR_DESC": "Heroku has a shortcut and settings settings",
+            "SET_SUCCESS": " Successfully set {} ➜ {}",
+            "KEY_VAL_MISSING": "𝑌𝑜𝑢 𝑡𝑦𝑝𝑒𝑑 𝑚𝑖𝑠𝑠𝑖𝑛𝑔 𝐾𝑒𝑦 𝑜𝑟 𝑉𝑎𝑙𝑢𝑒.",
+            "INVALID": "𝐼𝑛𝑣𝑎𝑙𝑖𝑑 𝑘𝑒𝑦: 𝑣𝑎𝑙𝑢𝑒 𝑓𝑜𝑟𝑚𝑎𝑡",
+            "GETVAR_DESC": "Heroku config var fetches.",
+            "DELVAR_DESC": "Heroku config var deletes.",
+            "DEL_SUCCESS": "{} 𝑠𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙𝑙𝑦 𝑑𝑒𝑙𝑒𝑡𝑒𝑑",
+            "NOT_FOUND": "𝑛𝑜 𝑟𝑒𝑠𝑢𝑙𝑡𝑠 𝑓𝑜𝑢𝑛𝑑 𝑓𝑜𝑟 𝑡ℎ𝑖𝑠 𝑘𝑒𝑦"           
+        },
+        
+        
+        
+        
+        
+        "profile": {
+            "BLOCK_DESC": "Blocks the user you specify.",
+            "UNBLOCK_DESC": "Unblocks the user you specify.",
+            "BLOCKED": "you are blocked",
+            "UNBLOCKED": "your obstacle is lifted",
+            "BLOCKED_UPPER": "You are blocked!",
+            "UNBLOCKED_UPPER": "I unblocked it.",
+            "NEED_USER": "Give me a user!"
+           
+            
+           
+        },
+        
+        "system_stats": {
+            "ALIVE_DESC": "Is the bot working??",
+            "PING_DESC": "Measures your bot's ping."
+        },
+       
+        "updater": {
+            "MESSAGE_T_LONG": "I am sending it as a file because the number of changes is too many.",
+            "UPDATER_DESC": "Updates your bot.",
+            "UPDATE": "𝑌𝑜𝑢𝑟 𝑏𝑜𝑡 𝑖𝑠 𝑓𝑢𝑙𝑙𝑦 𝑢𝑝 𝑡𝑜 𝑑𝑎𝑡𝑒!",
+            "NEW_UPDATE": "𝑁𝑒𝑤 𝑢𝑝𝑑𝑎𝑡𝑒 𝑎𝑣𝑎𝑖𝑙𝑎𝑏𝑙𝑒 𝑓𝑜𝑟 𝑏𝑜𝑡!\n\n𝐶ℎ𝑎𝑛𝑔𝑒𝑠:\n",
+            "UPDATE_NOW_DESC": "Make Update.",
+            "UPDATING": "𝑈𝑝𝑑𝑎𝑡𝑒 𝑖𝑛 𝑝𝑟𝑜𝑔𝑟𝑒𝑠𝑠...",
+            "INVALID_HEROKU": "❌𝑌𝑜𝑢𝑟 𝐻𝑒𝑟𝑜𝑘𝑢 𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛 𝑖𝑠 𝑖𝑛𝑐𝑜𝑟𝑟𝑒𝑐𝑡 !",
+            "UPDATED": "✅ 𝑇ℎ𝑒 𝑢𝑝𝑑𝑎𝑡𝑒 𝑤𝑎𝑠 𝑠𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙!",
+            "UPDATED_LOCAL": "𝑈𝑝𝑑𝑎𝑡𝑒 𝑤𝑎𝑠 𝑠𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙! \n𝐶ℎ𝑎𝑛𝑔𝑒𝑠 𝑦𝑜𝑢 𝑛𝑒𝑒𝑑 𝑡𝑜 𝑟𝑒𝑏𝑜𝑜𝑡.✅"
+        },
+        "weather": {
+            "WEATHER_DESC": "Brings the weather.",
+            "NEED_LOCATION": "𝐏𝐥𝐞𝐚𝐬𝐞 𝐞𝐧𝐭𝐞𝐫 𝐚 𝐥𝐨𝐜𝐚𝐭𝐢𝐨𝐧!\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞: .𝑤𝑒𝑎𝑡ℎ𝑒𝑟 𝐿𝑜𝑛𝑑𝑟𝑎"
+            
+        }
+   
+    
+    }
+}

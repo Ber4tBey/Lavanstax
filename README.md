@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://i.hizliresim.com/60dgunt.jpg" width="200" height="200">
   <h1>Lavanstax</h1>
 </div>
 <p align="center">
@@ -60,8 +61,8 @@ This project is open source so all the codes are clear. Neither less nor more; y
 ```
 Due to Userbot; Your İnstagram account may be banned.
 This is an open source project, you are responsible for everything you do. 
-Absolutely, Lavanstax executives do not accept responsibility.
-By establishing the Lavanstax, you are deemed to have accepted these responsibilities.
+Absolutely, Owen executives do not accept responsibility.
+By establishing the Owen, you are deemed to have accepted these responsibilities.
 ```
 
 ## Developers
@@ -71,7 +72,7 @@ By establishing the Lavanstax, you are deemed to have accepted these responsibil
 [Ber4tbey](https://t.me/Ber4tbey) |  
 Author, Base, Bug Fixes, Modules  | 
 ## Thanks To
-- [@androz2091](https://github.com/Androz2091) for coded [İnstagram.js](https://github.com/Androz2091/insta.js) 
+- [@androz2091](https://github.com/androz2091) for coded [İnstagram.js](https://github.com/androz2091/İnsta.js) 
 - Translators
 ## Contact
 Email: ```beratbeywinchester@gmail.com```

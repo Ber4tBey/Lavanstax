@@ -1,0 +1,125 @@
+{
+    "__OWENJSON__": true,
+    "LANGUAGE": "Azərbaycanca",
+    "LANGCODE": "az",
+    "AUTHOR": "Fvreed",
+    "STRINGS": { 
+        "_owen": {
+                "COMMAND": "💻𝐋𝐚𝐯𝐚𝐧𝐬𝐭𝐚𝐱 Ə𝐦𝐫 𝐒𝐢𝐲𝐚𝐡𝐢𝐬𝐢:",
+                "NOFOUND": "💻 Xahiş edirəm bir Lavan modulu adı qeyd edin!",
+                "COMINFO": "⚡️ 𝐙ə𝐡𝐦ə𝐭 𝐨𝐥𝐦𝐚𝐬𝐚, 𝐡𝐚𝐧𝐬𝐢 𝐋𝐚𝐯𝐚𝐧 𝐦𝐨𝐝𝐮𝐥𝐮𝐧𝐝𝐚 𝐤𝐨̈𝐦ə𝐤 𝐢𝐬𝐭ə𝐝𝐢𝐲𝐢𝐧𝐢𝐳𝐢 𝐪𝐞𝐲𝐝 𝐞𝐝𝐢𝐧! 𝐈̇𝐬𝐭𝐢𝐟𝐚𝐝ə𝐬𝐢: .𝐥𝐚𝐯𝐚𝐧 <𝐦𝐨𝐝𝐮𝐥 𝐚𝐝𝐢>",
+                "COMMAND1": "🔧 Ə𝐦𝐫:",
+                "ALTERNATE": "🌀 𝐀𝐜̧𝐢𝐪𝐥𝐚𝐦𝐚:",
+                "USE": "🧿𝐈̇𝐬𝐭𝐢𝐟𝐚𝐝ə𝐬𝐢:",
+                "DESC": "Bütün əmrləri və ya müəyyən bir əmr haqqında məlumatı sadalayır.",
+                "OWENIN": "[əmr adı]"
+            
+        },
+        "_plugin": {
+            "INSTALL_DESC": "Plugin yükləyər.",
+            "NEED_URL": "Zəhmət olmasa URL daxil edin! Nümunə:",
+            "INVALID_URL": "𝑋𝑎ℎ𝑖𝑠̧ 𝑒𝑑𝑖𝑟ə𝑚 𝑑𝑢̈𝑧𝑔𝑢̈𝑛 𝑈𝑅𝐿 𝑑𝑎𝑥𝑖𝑙 𝑒𝑑𝑖𝑛!",
+            "INVALID_PLUGIN": "❌ 𝑃𝑙𝑢𝑔𝑖𝑛𝑖𝑛𝑖𝑧 𝑥ə𝑡𝑎𝑙𝑖𝑑𝑖𝑟! \n𝑋ə𝑡𝑎:",
+            "INSTALLED": "✅ 𝑃𝑙𝑢𝑔𝑖𝑛 𝑢𝑔̆𝑢𝑟𝑙𝑎 𝑦𝑢̈𝑘𝑙ə𝑛𝑑𝑖!",
+            "PLUGIN_DESC": "Yüklədiyiniz pluginlərin siyahısını göstərər.",
+            "INSTALLED_FROM_REMOTE": "𝑌𝑢̈𝑘𝑙ə𝑑𝑖𝑦𝑖𝑛𝑖𝑧 𝑝𝑙𝑢𝑔𝑖𝑛𝑙ə𝑟:\n",
+            "NO_PLUGIN": "𝑌𝑢̈𝑘𝑙ə𝑛𝑚𝑖𝑠̧ 𝑝𝑙𝑢𝑔𝑖𝑛 𝑦𝑜𝑥𝑑𝑢𝑟!",
+            "REMOVE_DESC": "Plugini silər.",
+            "NEED_PLUGIN": "𝑍əℎ𝑚ə𝑡 𝑜𝑙𝑚𝑎𝑠𝑎 𝑝𝑙𝑢𝑔𝑖𝑛 𝑎𝑑𝑖 𝑑𝑎𝑥𝑖𝑙 𝑒𝑑𝑖𝑛! 𝑁𝑢̈𝑚𝑢𝑛ə: .𝑝𝑙𝑢𝑔𝑖𝑛 𝑡𝑒𝑠𝑡",
+            "NOT_FOUND_PLUGIN": "𝐵ə𝑙𝑘ə 𝑏𝑒𝑙ə 𝑏𝑖𝑟 𝑝𝑙𝑎𝑔𝑖𝑛 𝑞𝑢𝑟𝑎𝑠̧𝑑𝑖𝑟𝑑𝑖𝑛𝑖𝑧, 𝑏ə𝑙𝑘ə 𝑒𝑡𝑚ə𝑑𝑖𝑛𝑖𝑧. 𝐴𝑚𝑚𝑎 𝑏𝑢, ə𝑙𝑏ə𝑡𝑡ə 𝑘𝑖, 𝑖𝑛𝑑𝑖 𝑑𝑒𝑦𝑖𝑙.",
+            "DELETED": "✅ 𝑀𝑜𝑑𝑢𝑙 𝑢𝑔̆𝑢𝑟𝑙𝑎 𝑠𝑖𝑙𝑖𝑛𝑑𝑖! 𝐷ə𝑦𝑖𝑠̧𝑖𝑘𝑙𝑖𝑘𝑙ə𝑟𝑖𝑛 𝑞𝑢̈𝑣𝑣ə𝑦ə 𝑚𝑖𝑛𝑚ə𝑠𝑖 𝑢̈𝑐̧𝑢̈𝑛 𝑦𝑒𝑛𝑖𝑑ə𝑛 𝑏𝑎𝑠̧𝑙𝑎𝑚𝑎𝑙𝑖𝑠𝑖𝑛𝑖𝑧."
+        },
+        "admin": {
+            "BAN_DESC": "Qrupdakı insanları qadağan edir. Əmrin yanındakı şəxsi tag edin.",
+            "IM_NOT_ADMIN": "𝑀ə𝑛 𝑏𝑢 𝑞𝑟𝑢𝑝𝑑𝑎 𝑎𝑑𝑚𝑖𝑛 𝑑𝑒𝑦𝑖𝑙ə𝑚!",
+            "BANNED": "qrupdan çıxarıldı!",
+            "GIVE_ME_USER": "𝑀ə𝑛ə 𝑖𝑠𝑡𝑖𝑓𝑎𝑑ə𝑐̧𝑖 𝑣𝑒𝑟!",
+            "NOT_BAN_ME": "Özümü banlaya bilmərəm!"
+        },
+        "afk": {
+            "IM_AFK": "Artiq AFK'yam!",
+            "REASON": "𝐒ə𝐛ə𝐛:",
+            "LAST_SEEN": "Son görülmə",
+            "IM_NOT_AFK": "𝐴𝑟𝑡𝑖𝑞 𝐴𝐹𝐾 𝑑𝑒𝑦𝑖𝑙ə𝑚!",
+            "HOUR": "saat",
+            "MINUTE": "dəqiqə",
+            "SECOND": "saniyə",
+            "AFK_STAT" : "Sahibim AFK-dır.",
+            "AFK_DESC": "Sizi AFK edir."
+        },
+        
+        "spammer": {
+         "SPAMMER_DESC": "Spam atar nümunə: **.spam 10 Salam",
+         "NEED_WRD": "Siz məqalə daxil etməlisiniz ki, mən spam göndərə bilim: **.spam 10 Salam"
+        },
+
+        "heroku": {
+            "RESTART_DESC": "Lavanstax'ı yenidən başladın",
+            "RESTART_MSG": "𝑌𝑒𝑛𝑖𝑑ə𝑛 𝑖𝑠̧ə 𝑠𝑎𝑙𝑖𝑛𝑖𝑟...",
+            "DYNO_DESC": "Heroku dyno istifadəsini yoxlayın",
+            "DYNO_TOTAL": "𝐔̈𝐦𝐮𝐦𝐢 𝐤𝐯𝐨𝐭𝐚:",
+            "DYNO_USED": "𝐈̇𝐬𝐭𝐢𝐟𝐚𝐝ə 𝐞𝐝𝐢𝐥ə𝐧 𝐤𝐯𝐨𝐭𝐚:",
+            "PERCENTAGE": "%",
+            "DYNO_LEFT": "𝐐𝐚𝐥𝐚𝐧:",
+            "SETVAR_DESC": "Heroku'ya config var əlavə edər.",
+            "SET_SUCCESS": "Uğurla ayarlandı {} ➜ {}",
+            "KEY_VAL_MISSING": "𝐵𝑖𝑟 𝑥ə𝑡𝑎 𝑏𝑎𝑠̧ 𝑣𝑒𝑟𝑑𝑖.",
+            "INVALID": "𝑌𝑎𝑛𝑙𝑖𝑠̧ 𝑎𝑐̧𝑎𝑟: 𝑑ə𝑦ə𝑟 𝑓𝑜𝑟𝑚𝑎𝑡𝑖",
+            "GETVAR_DESC": "Heroku konfiqurasiyaları gətirir.",
+            "DELVAR_DESC": "Heroku config var silər.",
+            "DEL_SUCCESS": "{} 𝑢𝑔̆𝑢𝑟𝑙𝑎 𝑠𝑖𝑙𝑖𝑛𝑑𝑖",
+            "NOT_FOUND": "ℎ𝑒𝑐̧𝑛ə 𝑡𝑎𝑝𝑖𝑙𝑚𝑎𝑑𝑖"           
+        },
+        "profile": {
+            "BLOCK_DESC": "Göstərdiyiniz istifadəçini bloklayır.",
+            "UNBLOCK_DESC": "Göstərdiyiniz istifadəçini blokdan çıxarır.",
+            "BLOCKED": "əngəlləndin",
+            "UNBLOCKED": "qadağanız aradan qaldırıldı",
+            "BLOCKED_UPPER": "Əngəlləndin!",
+            "UNBLOCKED_UPPER": "Qadağanı qaldırdım.",
+            "NEED_USER": "Mənə istifadəçi ver!"    
+        },
+        
+        "system_stats": {
+            "ALIVE_DESC": "Bot işləyirmi?",
+            "PING_DESC": "Botunuzun pingini ölçər."
+        },
+        "updater": {
+            "MESSAGE_T_LONG": "Dəyişikliklərin sayı çox olduğu üçün onu fayl olaraq göndərirəm.",
+            "UPDATER_DESC": "Botunuzu güncəlləyər.",
+            "UPDATE": "𝐵𝑜𝑡𝑢𝑛𝑢𝑧 𝑔𝑢̈𝑛𝑐ə𝑙𝑑𝑖𝑟!",
+            "NEW_UPDATE": "𝐵𝑜𝑡 𝑢̈𝑐̧𝑢̈𝑛 𝑦𝑒𝑛𝑖 𝑔𝑢̈𝑛𝑐ə𝑙𝑙ə𝑚ə 𝑚𝑜̈𝑣𝑐𝑢𝑑𝑑𝑢𝑟!\n\n𝐷ə𝑦𝑖𝑠̧𝑖𝑘𝑙𝑖𝑘𝑙ə𝑟:\n",
+            "UPDATE_NOW_DESC": "Güncəlləmə edər.",
+            "UPDATING": "𝐺𝑢̈𝑛𝑐ə𝑙𝑙ə𝑚ə 𝑒𝑑𝑖𝑙𝑖𝑟...",
+            "INVALID_HEROKU": "❌ 𝐻𝑒𝑟𝑜𝑘𝑢 𝑚ə𝑙𝑢𝑚𝑎𝑡𝑙𝑎𝑟𝑖𝑛𝑖𝑧 𝑠əℎ𝑣𝑑𝑖𝑟!",
+            "UPDATED": "✅ 𝑈𝑔̆𝑢𝑟𝑙𝑎 𝑔𝑢̈𝑛𝑐ə𝑙𝑙ə𝑛𝑑𝑖!",
+            "UPDATED_LOCAL": "✅ 𝐺𝑢̈𝑛𝑐ə𝑙𝑙ə𝑚ə 𝑢𝑔̆𝑢𝑟𝑙𝑢 𝑜𝑙𝑑𝑢!\n𝐵𝑜𝑡𝑢𝑛𝑢𝑧 𝑦𝑒𝑛𝑖𝑑ə𝑛 𝑏𝑎𝑠̧𝑙𝑎𝑦𝑖𝑟."
+        },
+        "weather": {
+            "WEATHER_DESC": "Hava məlumatını gətirər.",
+            "NEED_LOCATION": "𝑋𝑎ℎ𝑖𝑠̧ 𝑒𝑑𝑖𝑟ə𝑚 𝑏𝑖𝑟 𝑚ə𝑘𝑎𝑛 𝑎𝑑𝑖 𝑦𝑎𝑧𝑖𝑛!\n𝑁𝑢̈𝑚𝑢𝑛ə: .𝑤𝑒𝑎𝑡ℎ𝑒𝑟 𝐵𝑎𝑘𝑢"
+            
+            
+        },
+        "gmode": {
+            "IM_NOT_ADMIN": "````Mesajları silmək səlahiyyətim yoxdur.````",
+            "GIVE_ME_USER": "**Mənə istifadəçi ver!**",
+            "NOT_GMUTE_ME": "**Mən özümü susdura bilmirəm**",
+            "NOT_GBAN_ME": "**Mən özümü gban bilmirəm**",
+            "UNGMUTE_SUCCES": "```📣 İstifadəçi qlobal olaraq səssizdən çıxarıldı!```",
+            "GMUTE_SUCCES": "```📣İstifadəçi qlobal olaraq səssizləşdirildi!```",
+            "UNGBAN_SUCCES": "```📣 İstifadəçi qlobal miqyasda qadağan edilib!```",
+            "GBAN_SUCCES": "```📣 İstifadəçi qlobal şəkildə qadağandır!```",
+            "GMUTE_DESC": "*Admin olduğunuz bütün qruplardakı şəxsin səsini söndürür.*",
+            "GBAN_DESC": "*Admin olduğunuzu bütün qruplarda qadağan edin.*",
+            "UNGMUTE_DESC": "*Admin olduğunuz bütün qruplardakı şəxsin səsini söndürün.*",
+            "UNGBAN_DESC": "*Admin olduğunuz bütün qruplardakı şəxsin qadağanını ləğv edin.*",
+            "GMUTE_AV": "```İstifadəçi artıq qlobal olaraq səssizdir!```",
+            "GBAN_AV": "```İstifadəçi artıq qlobal şəkildə qadağan edilib!```",
+            "GBAN_TEXT": "```Sən pis adamsan! Mən səni daha burada saxlamayacağam. Sizə qadağa qoyulub!```"
+
+            
+        }
+    
+    }
+}
