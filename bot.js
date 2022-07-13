@@ -5,7 +5,7 @@ Lavanstax - Ber4tbey
 */
 
 
-const Insta = require('@androz2091/insta.js');
+const Insta = require('@ber4tbey/insta.js');
 const Collection = require('@discordjs/collection');
 const Config = require('./config');
 const chalk = require('chalk');
