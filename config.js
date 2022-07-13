@@ -18,7 +18,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './Lavanstax.db' : proce
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v0.2.0 Close Beta',
+    VERSION: 'v0.1.0 Public Beta',
     USERNAME: process.env.USERNAME === undefined ? '' : process.env.USERNAME,
     PASSWORD: process.env.PASSWORD === undefined ? '' : process.env.PASSWORD,
     PREFIX: process.env.PREFIX === undefined ? '.' : process.env.PREFIX,
