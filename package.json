@@ -20,7 +20,6 @@
     "quick.db": "^7.1.1",
     "sequelize": "^6.15.0",
     "simple-git": "^2.22.0",
-    "sqlite3": "^5.0.2",
     "stream": "^0.0.2",
     "superagent": "^3.8.2",
     "translatte": "^3.0.1",
