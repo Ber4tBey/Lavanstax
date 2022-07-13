@@ -1,4 +1,4 @@
-FROM ber4tbey/lavanstax:latest
+FROM node:16.8.0-alpine
 
 RUN git clone $LAVANSTAX_REPO_URL /root/Lavanstax/
 WORKDIR /root/Lavanstax/
