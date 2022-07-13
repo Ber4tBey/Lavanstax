@@ -49,7 +49,7 @@ const plugindb = require('./userbot/plugins/sql/plugin');
 
 require("./language")
 console.log(`⬇️ Giriş Yapılıyor...`)
-const PREFIX = Config.PREFIX;
+const PREFIX = '.'
 
 
 const LOGINFO = "[INFO] ";
