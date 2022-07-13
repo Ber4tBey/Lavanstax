@@ -7,7 +7,7 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "@ber4tbey/insta.js": "^1.0.0",
+    "@androz2091/insta.js": "^1.6.1",
     "@discordjs/collection": "^0.1.6",
     "chalk": "^4.1.0",
     "download": "^8.0.0",
