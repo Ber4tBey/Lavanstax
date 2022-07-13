@@ -19,8 +19,8 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 
 module.exports = {
     VERSION: 'v0.2.0 Close Beta',
-    USERNAME: process.env.USERNAME === undefined ? 'lavanderprojects' : process.env.USERNAME,
-    PASSWORD: process.env.PASSWORD === undefined ? 'lavander_45.' : process.env.PASSWORD,
+    USERNAME: process.env.USERNAME === undefined ? '' : process.env.USERNAME,
+    PASSWORD: process.env.PASSWORD === undefined ? '' : process.env.PASSWORD,
     PREFIX: process.env.PREFIX === undefined ? '.' : process.env.PREFIX,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE,
     API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
