@@ -129,7 +129,7 @@ bot.on("connected", async function() {
           if (jsfiles.length <= 0) { return console.log("Komut bulunamadı..."); }
 
           jsfiles.forEach((f, i) => {
-              
+              console.log(f)
               var cmds = require(`./userbot/plugins/${f}`);
               bot.commands.set(cmds.config.command, cmds);
               bot.alias.set(cmds.config.alias, cmds);
@@ -164,32 +164,7 @@ const config = require("./config");
 bot.on("messageCreate", async function(message) {
 
 	if (message.author.id !== bot.user.id) return;
-	if (message.author.id == bot.user.id) 
-  
-	
-
-	if (message.data.item_type === 'media_share') {
-		const mediaData = {
-			messageSender: message.author.username,
-			creatorIgHandle: util.extractCreator(message.data),
-			images: util.extractImages(message.data),
-			mediaShareUrl: util.extractMediaShareUrl(message.data),
-			timestamp: util.extractPostTimestamp(message.data),
-			location: util.extractLocation(message.data),
-		}
-                const images = mediaData.images;
-                const start = Date.now();
-		await message.chat.sendMessage("✅ Resim(ler) gönderiliyor...");
-		for(const image of images){
-                await message.chat.sendPhoto(image);
-                }
-                await message.chat.sendMessage(`✅ Resim(ler) başarıyla gönderildi! (${Date.now() - start} ms)`);
-		return;
-	};
-	
-		
-
-	
+	if (message.author.id == bot.user.id) 	
   if (!message.content.startsWith(PREFIX)) return;
   var cont = message.content.slice(PREFIX.length).split(" ");
   var args = cont.slice(1);
