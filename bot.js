@@ -129,7 +129,7 @@ bot.on("connected", async function() {
           if (jsfiles.length <= 0) { return console.log("Komut bulunamadı..."); }
 
           jsfiles.forEach((f, i) => {
-              console.log(f)
+             
               var cmds = require(`./userbot/plugins/${f}`);
               bot.commands.set(cmds.config.command, cmds);
               bot.alias.set(cmds.config.alias, cmds);
