@@ -1,4 +1,4 @@
-declare module '@bertbey/insta.js' {
+declare module '@androz2091/insta.js' {
     import ipa, { DirectThreadEntity, UserRepositoryInfoResponseUser } from 'instagram-private-api';
     import { EventEmitter } from 'events';
     import { Collection } from '@discordjs/collection';
@@ -19,12 +19,12 @@ declare module '@bertbey/insta.js' {
         private _pathOrCreateUser(userID: string, userPayload: ipa.UserRepositoryInfoResponseUser): User;
         private handleRealtimeReceive(topic: Topic, messages?: ParsedMessage<any>[]): void;
         private handleFbnsReceive(data: FbnsNotificationUnknown): void;
-
+        
         public createChat(userIDs: string[]): Promise<Chat>;
         public fetchChat(chatID: string, force: boolean): Promise<Chat>;
         public fetchUser(query: string, force: boolean): Promise<User>;
         public logout(): void;
-        public login(username: string, password: string, proxy: object, state: object): void;
+        public login(username: string, password: string, state: object): void;
         public toJSON(): ClientJSON;
 
         public on<K extends keyof ClientEvents>(event: K, listener: (...args: ClientEvents[K]) => void): this;
@@ -59,7 +59,7 @@ declare module '@bertbey/insta.js' {
         public file: Buffer;
 
         private _verify(): Promise<void>;
-
+        
         public _handleFile(file: string): Promise<void>;
         public _handleBuffer(data: Buffer): Promise<void>;
         public _handleURL(link: string): Promise<void>;
@@ -67,7 +67,7 @@ declare module '@bertbey/insta.js' {
 
     class Chat {
         constructor(client: Client, threadID: string, data: ChatData);
-
+        
         public client: Client;
         public id: string;
         public messages: Collection<string, Message>;
@@ -216,7 +216,7 @@ declare module '@bertbey/insta.js' {
         public followerCount?: number;
         public totalIgtvVideos?: number;
         public readonly privateChat: Chat;
-
+        
         public _patch(data: UserData): void;
         public fetch(): Promise<User>;
         public fetchPrivateChat(): Promise<Chat>;
