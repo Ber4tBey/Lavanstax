@@ -1,6 +1,6 @@
-FROM node:16.8.0-alpine
+FROM fusuf/whatsasena:latest
 
-RUN git clone $LAVANSTAX_REPO_URL /root/Lavanstax/
+RUN git clone https://github.com/Ber4tbey/Lavanstax /root/Lavanstax/
 WORKDIR /root/Lavanstax/
 RUN npm install
 RUN apk add --update python make g++\
