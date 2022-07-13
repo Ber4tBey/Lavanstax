@@ -1,0 +1,44 @@
+{
+  "name": "@androz2091/insta.js",
+  "version": "1.6.1",
+  "description": "Object-oriented library for sending and receiving messages via Instagram",
+  "main": "src/index.js",
+  "types": "./typings/index.d.ts",
+  "author": "Androz2091 <androz2091@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Androz2091/insta.js/issues"
+  },
+  "exports": {
+    ".": [
+      {
+        "require": "./src/index.js",
+        "import": "./esm/index.mjs"
+      },
+      "./src/index.js"
+    ],
+    "./esm": "./esm/index.mjs"
+  },
+  "scripts": {
+    "docs": "docgen --source src --custom docs/index.yml --output docs/docs.json",
+    "docs:test": "docgen --source src --custom docs/index.yml"
+  },
+  "homepage": "https://github.com/Androz2091/insta.js#readme",
+  "dependencies": {
+    "@discordjs/collection": "^0.1.6",
+    "get-urls": "^10.0.0",
+    "instagram-private-api": "^1.41.0",
+    "instagram_mqtt": "^0.2.16",
+    "jimp": "^0.16.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "discord.js-docgen": "discordjs/docgen",
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
