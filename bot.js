@@ -140,7 +140,7 @@ bot.on("connected", async function() {
     
 
       });
-  
+  await sleep(10000);
   console.log(
       chalk.green.bold('✅ Plugins installed!')
   );
