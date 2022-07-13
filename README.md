@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.hizliresim.com/60dgunt.jpg" width="200" height="200">
+
   <h1>Lavanstax</h1>
 </div>
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 ----
-![Docker Pulls](https://img.shields.io/docker/pulls/ber4tbey/Lavanstax?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/ber4tbey/Lavanstax?style=flat-square)
+![Docker Pulls](https://img.shields.io/docker/pulls/ber4tbey/lavanstax?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/ber4tbey/lavanstax?style=flat-square)
 
 ## 📢 Guide
 > [Also for support & help please come our Telegram group.](https://t.me/LavanderSupport)
@@ -61,8 +61,8 @@ This project is open source so all the codes are clear. Neither less nor more; y
 ```
 Due to Userbot; Your İnstagram account may be banned.
 This is an open source project, you are responsible for everything you do. 
-Absolutely, Owen executives do not accept responsibility.
-By establishing the Owen, you are deemed to have accepted these responsibilities.
+Absolutely, Lavanstax executives do not accept responsibility.
+By establishing the Lavanstax, you are deemed to have accepted these responsibilities.
 ```
 
 ## Developers
