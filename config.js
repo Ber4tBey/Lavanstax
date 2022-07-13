@@ -31,7 +31,7 @@ module.exports = {
     AFK_MESSAGE: process.env.AFK_MESSAGE === undefined ? 'Hayat çok kısa, yapacak çok şey var...\nOnlardan birini yapıyorum.. Sahibim şuanda #AFK' : process.env.AFK_MESSAGE,
     SEND_READ: process.env.SEND_READ === undefined ? 'false' : process.env.SEND_READ,
     PENDING_REQUEST: process.env.PENDING_REQUEST === undefined ? 'true' : process.env.PENDING_REQUEST,
-    FOLLOW_SEND: process.env.FOLLOW_SEND === undefined ? 'true' : procces.env.FOLLOW_SEND   
+    FOLLOW_SEND: process.env.FOLLOW_SEND === undefined ? 'true' : process.env.FOLLOW_SEND   
     }
     
 
