@@ -19,8 +19,8 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 
 module.exports = {
     VERSION: 'v0.2.0 Close Beta',
-    USERNAME: process.env.USER_NAME === undefined ? '' : process.env.USER_NAME,
-    PASSWORD: process.env.PASSWORD === undefined ? '' : process.env.PASSWORD,
+    USERNAME: process.env.USERNAME === undefined ? 'lavanderprojects' : process.env.USERNAME,
+    PASSWORD: process.env.PASSWORD === undefined ? 'lavander_45.' : process.env.PASSWORD,
     PREFIX: process.env.PREFIX === undefined ? '.' : process.env.PREFIX,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE,
     API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
@@ -31,7 +31,7 @@ module.exports = {
     AFK_MESSAGE: process.env.AFK_MESSAGE === undefined ? 'Hayat çok kısa, yapacak çok şey var...\nOnlardan birini yapıyorum.. Sahibim şuanda #AFK' : process.env.AFK_MESSAGE,
     SEND_READ: process.env.SEND_READ === undefined ? 'false' : process.env.SEND_READ,
     PENDING_REQUEST: process.env.PENDING_REQUEST === undefined ? 'true' : process.env.PENDING_REQUEST,
-    FOLLOW_SEND: process.env.FOLLOW_SEND === undefined ? 'true' : process.env.FOLLOW_SEND   
+    FOLLOW_SEND: process.env.FOLLOW_SEND === undefined ? 'true' : procces.env.FOLLOW_SEND   
     }
     
 
