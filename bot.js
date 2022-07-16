@@ -1,4 +1,6 @@
-/* Copyright (C) 2022 Ber4tbey.
+  if (Config.PENDING_REQUEST == 'true'){
+  if (message.chat.pending) await message.chat.approve(); 
+}/* Copyright (C) 2022 Ber4tbey.
 Licensed under the  MIT License;
 you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
@@ -312,7 +314,7 @@ const Lang = Language.getString('afk');
 //Afk olduğumuzu bildirme - Group
 bot.on("messageCreate", async function(msg) {
   if (msg.chat.isGroup);
-  if (msg.content.includes(`@${bot.user.name}`)){
+  if (msg.content.includes(`@${bot.user.username}`)){
   if(msg.author.id == bot.user.id) return;
   a = db.fetch('isAfk')
   
