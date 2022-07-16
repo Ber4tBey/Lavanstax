@@ -17,10 +17,10 @@ let baseURI = '/apps/' + Config.APP_NAME;
 
 
 exports.run = async(client, message, args) => {
-    message.chat.sendMessage(message,Lang.RESTART_MSG);
+    message.chat.sendMessage(mang.RESTART_MSG);
     console.log(baseURI);
     await heroku.delete(baseURI + '/dynos').catch(async (error) => {
-         message.chat.sendMessage(message,error.message);
+         message.chat.sendMessage(error.message);
     });
 };
 module.exports.config = {
