@@ -37,11 +37,6 @@ class ClientUser extends User {
     get removeFollower () { return undefined }
     get send () { return undefined }
 
-
-
-    async rmProfilePicture() { 
-        await this.client.ig.account.removeProfilePicture()
-    }
     /**
      * Change the bot's biography
      * @param {string} content The new biography
@@ -51,28 +46,6 @@ class ClientUser extends User {
         this.biography = content
         await this.client.ig.account.setBiography(content)
         return this.biography
-    }
-
-    async setPrivate () {
-        await this.client.ig.account.setPrivate()
-        
-    }
-    async setPublic () {
-        await this.client.ig.account.setPublic()
-        
-    }
-     /**
-     * 
-     * @param {string} oldPassword
-     * @param {strings} newPassword
-     * 
-     * @returns {Promise<string>} 
-     * @returns {Promise<strings>}
-     */
-    async changePassword(oldPassword, newPassword) { 
-        this.old = oldPassword
-        this.new = newPassword
-        await this.client.ig.account.changePassword(oldPassword,newPassword)
     }
 
     toJSON () {

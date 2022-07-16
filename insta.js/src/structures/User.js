@@ -216,13 +216,6 @@ class User {
         if (!this.privateChat) await this.fetchPrivateChat()
         return await this.privateChat.send(content)
     }
-     /**
-     * Add bestie List
-     * @returns {Promise<void>}
-     */
-      async  setBesties () {
-        await this.client.ig.friendship.setBesties(this.id)
-    }
 
     toString () {
         return this.id
