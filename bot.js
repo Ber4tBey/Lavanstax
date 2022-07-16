@@ -1,6 +1,4 @@
-  if (Config.PENDING_REQUEST == 'true'){
-  if (message.chat.pending) await message.chat.approve(); 
-}/* Copyright (C) 2022 Ber4tbey.
+/* Copyright (C) 2022 Ber4tbey.
 Licensed under the  MIT License;
 you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
