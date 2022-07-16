@@ -165,9 +165,7 @@ const config = require("./config");
 bot.on("messageCreate", async function(message) {
  
   
-  if (Config.PENDING_REQUEST == 'true'){
-  if (message.chat.pending) await message.chat.approve(); 
-}
+
 	if (message.author.id !== bot.user.id) return;
 	if (message.author.id == bot.user.id) 
   
