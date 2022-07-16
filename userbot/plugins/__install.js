@@ -21,8 +21,8 @@ module.exports.run = async (bot, message, args,match) => {
     
     let mesaj = args[0];
     let plugin_name =  args.slice(1).join(' ');
-    if (mesaj === '') return message.chat.sendMessage( '```' + Lang.NEED_URL + '.install https://gist.github.com/Berathanyedibela/d21eaecc799b99cbd8cc5afdf209f2dc Lavanstax-Ber4tbey```')
-    if (mesaj,plugin_name === '') return message.chat.sendMessage( '```' + Lang.NEED_URL + '.install https://gist.github.com/Berathanyedibela/d21eaecc799b99cbd8cc5afdf209f2dc Lavanstax-Ber4tbey```')
+    if (mesaj === '') return message.chat.sendMessage( Lang.NEED_URL + '.install https://gist.github.com/Berathanyedibela/d21eaecc799b99cbd8cc5afdf209f2dc Lavanstax-Ber4tbey')
+    if (mesaj,plugin_name === '') return message.chat.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Berathanyedibela/d21eaecc799b99cbd8cc5afdf209f2dc Lavanstax-Ber4tbey')
     try {
         var url = new URL(mesaj);
     } catch {
@@ -41,7 +41,7 @@ module.exports.run = async (bot, message, args,match) => {
             require('./' + plugin_name);
         } catch (e) {
             fs.unlinkSync('./userbot/plugins/' + plugin_name + '.js');
-            return message.chat.sendMessage(Lang.INVALID_PLUGIN + ' ```' + e + '```');
+            return message.chat.sendMessage(Lang.INVALID_PLUGIN);
         }
 
         await Db.installPlugin(url, plugin_name);
