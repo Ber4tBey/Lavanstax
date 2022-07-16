@@ -5,7 +5,7 @@ Lavanstax - Ber4tbey
 */
 
 
-const Insta = require('./insta.js');
+const Insta = require('@ber4tbey/insta.js');
 const Collection = require('@discordjs/collection');
 const Config = require('./config');
 const chalk = require('chalk');
@@ -163,8 +163,8 @@ const util = require("./userbot/util/functions.js");
 const config = require("./config");
 
 bot.on("messageCreate", async function(message) {
-  console.log(message.chat)
-  if (message.chat.isGroup)return;
+ 
+  
   if (Config.PENDING_REQUEST == 'true'){
   if (message.chat.pending) await message.chat.approve(); 
 }
@@ -228,7 +228,7 @@ bot.on("messageCreate", async function(message) {
 
 
 bot.on('newFollower', async (user) => {
-if (config.FOLLOW_SEND == false)return;
+if (config.FOLLOW_SEND == 'false')return;
 bot.fetchUser(user).then((user))
 
 
