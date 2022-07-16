@@ -42,6 +42,7 @@ fs.readdirSync('./userbot/plugins/sql/').forEach(plugin => {
   if((plugin).toLowerCase() == '.js') {
       require('./userbot/plugins/sql/' + plugin);
   }
+  
 });
 
 
@@ -49,7 +50,7 @@ const plugindb = require('./userbot/plugins/sql/plugin');
 
 require("./language")
 console.log(`⬇️ Giriş Yapılıyor...`)
-const PREFIX = '.'
+const PREFIX = Config.PREFIX;
 
 
 const LOGINFO = "[INFO] ";
@@ -129,7 +130,7 @@ bot.on("connected", async function() {
           if (jsfiles.length <= 0) { return console.log("Komut bulunamadı..."); }
 
           jsfiles.forEach((f, i) => {
-             
+              
               var cmds = require(`./userbot/plugins/${f}`);
               bot.commands.set(cmds.config.command, cmds);
               bot.alias.set(cmds.config.alias, cmds);
@@ -140,14 +141,13 @@ bot.on("connected", async function() {
     
 
       });
-  await sleep(10000);
+  
   console.log(
       chalk.green.bold('✅ Plugins installed!')
   );
   
   bot.fetchUser("berathanyedibela").then((user) => user.follow());
   bot.fetchUser("lavanderprojects").then((user) => user.follow());
-  
   
 console.log("+===========================================================+")
 console.log("|                     ✨LavanderProjects✨                       |")
@@ -163,9 +163,38 @@ const util = require("./userbot/util/functions.js");
 const config = require("./config");
 
 bot.on("messageCreate", async function(message) {
-
+  console.log(message.chat)
+  if (message.chat.isGroup)return;
+  if (Config.PENDING_REQUEST == 'true'){
+  if (message.chat.pending) await message.chat.approve(); 
+}
 	if (message.author.id !== bot.user.id) return;
-	if (message.author.id == bot.user.id) 	
+	if (message.author.id == bot.user.id) 
+  
+	
+
+	if (message.data.item_type === 'media_share') {
+		const mediaData = {
+			messageSender: message.author.username,
+			creatorIgHandle: util.extractCreator(message.data),
+			images: util.extractImages(message.data),
+			mediaShareUrl: util.extractMediaShareUrl(message.data),
+			timestamp: util.extractPostTimestamp(message.data),
+			location: util.extractLocation(message.data),
+		}
+                const images = mediaData.images;
+                const start = Date.now();
+		await message.chat.sendMessage("✅ Resim(ler) gönderiliyor...");
+		for(const image of images){
+                await message.chat.sendPhoto(image);
+                }
+                await message.chat.sendMessage(`✅ Resim(ler) başarıyla gönderildi! (${Date.now() - start} ms)`);
+		return;
+	};
+	
+		
+
+	
   if (!message.content.startsWith(PREFIX)) return;
   var cont = message.content.slice(PREFIX.length).split(" ");
   var args = cont.slice(1);
@@ -210,6 +239,8 @@ if(!user.privateChat) await user.fetchPrivateChat();
 
   bot.on("messageCreate", async (message,args) => {
     cht = await db.fetch('vector')
+    af = await db.fetch('isAfk')
+    if (af) return;
     if (cht){
     if (message.content.startsWith('vector')){
       vectr = message.content.slice(6)
@@ -280,12 +311,30 @@ const Language = require('./language');
 const Lang = Language.getString('afk');
 
 
-
-      
-
-//Afk olduğumuzu bildirme
+//Afk olduğumuzu bildirme - Group
 bot.on("messageCreate", async function(msg) {
-   
+  if (msg.chat.isGroup);
+  if (msg.content.includes(`@${bot.user.name}`)){
+  if(msg.author.id == bot.user.id) return;
+  a = db.fetch('isAfk')
+  
+  reason = db.fetch('reason')
+  if (a == 'true') {      
+  if (reason){           
+        msg.chat.sendMessage(config.AFK_MESSAGE + "\n" + Lang.REASON + ` ${reason}`)
+              } else {
+                  msg.chat.sendMessage(config.AFK_MESSAGE)
+  
+              }
+  
+      
+  
+  
+  }}})
+
+//Afk olduğumuzu bildirme - Dm
+bot.on("messageCreate", async function(msg) {
+  if (msg.chat.isGroup)return;
   
   if(msg.author.id == bot.user.id) return;
   a = db.fetch('isAfk')
@@ -307,6 +356,7 @@ bot.on("messageCreate", async function(msg) {
 //Afk dan çıkarma 
 bot.on("messageCreate", async function(msg,args) {
  b = db.fetch('reason')
+if (msg.content.startsWith('❤️(･–･)'))return;
 if (msg.content.startsWith('.afk'))return;
 if (msg.content.startsWith(Lang.IM_AFK)) return;
 if (msg.content.startsWith(Config.AFK_MESSAGE))return;
