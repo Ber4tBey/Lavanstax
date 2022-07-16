@@ -30,6 +30,6 @@ module.exports.run = async(client, message,args) => {
 }
 
 module.exports.config = {
-command: 'sinfo',
+command: 'info',
 description: 'Kişi hakkında bilgi verir.',
 }
