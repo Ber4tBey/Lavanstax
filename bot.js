@@ -20,6 +20,7 @@ bot.alias = new Collection();
 bot.alias2 = new Collection();
 const translatte = require('translatte');
 const fetch = require("node-fetch");
+const got = (...args) => import('got').then(({default: got}) => got(...args));
 var AFK = {
   isAfk: false,
   reason: false,
