@@ -7,6 +7,7 @@ Lavanstax - Ber4tbey
 const Language = require('../../language');
 const Lang = Language.getString('_owen');
 const Lavan = require('../../bot')
+PREFIX = "."
 module.exports.run = async (bot, message, args) => {
     const data = [];
     const { commands, config } = bot;
@@ -32,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
 
     //if (command.alternative) data.push(LANG.ALTERNATE `${command.aliases.join(', ')}`);
     if (command.config.description) data.push(Lang.ALTERNATE + ` ${command.config.description} \n`);
-    if (command.config.usage) data.push(Lang.USE + ` ${configg.PREFIX}${command.config.command} ${command.config.usage}`);
+    if (command.config.usage) data.push(Lang.USE + ` ${PREFIX}${command.config.command} ${command.config.usage}`);
 
     
     
