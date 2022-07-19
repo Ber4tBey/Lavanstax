@@ -26,7 +26,7 @@
     "superagent": "^3.8.2",
     "translatte": "^3.0.1",
     "ytdl-core": "^0.18.1",
-    "instagram_mqtt": "^1.2.2"
+    "instagram_mqtt": "^0.2.17"
   },
   "keywords": [
     "node",
