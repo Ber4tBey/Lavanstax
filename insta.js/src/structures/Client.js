@@ -1,11 +1,11 @@
-const { withRealtime, withFbns } = require('instagram_mqtt')
+const { withRealtime, withFbns,withFbnsAndRealtime } = require('instagram_mqtt')
 // const { GraphQLSubscriptions, SkywalkerSubscriptions } = require('instagram_mqtt/dist/realtime/subscriptions')
 const { IgApiClient } = require('instagram-private-api')
 const { EventEmitter } = require('events')
 const Collection = require('@discordjs/collection')
 
 const Util = require('../utils/Util')
-
+const {existsSync, readFileSync, unlinkSync, writeFileSync, mkdirSync} = require('fs')
 const ClientUser = require('./ClientUser')
 const Message = require('./Message')
 const Chat = require('./Chat')
@@ -345,29 +345,48 @@ class Client extends EventEmitter {
         await this.ig.realtime.disconnect();
         await this.ig.fbns.disconnect();
     }
-
+    
     /**
      * Log the bot in to Instagram
      * @param {string} username The username of the Instagram account.
      * @param {string} password The password of the Instagram account.
-     * @param {object} [state] Optional state object. It can be generated using client.ig.exportState().
+     * @param {object} [state] Optional state object. 
      */
-    async login (username, password, state) {
-        const ig = withFbns(withRealtime(new IgApiClient()))
+    async login (username,state) {
+        const ig = withFbnsAndRealtime(new IgApiClient())
         ig.state.generateDevice(username)
-        if (state) {
-            await ig.importState(state)
+        
+        let tokenPath = `./token/${username}.json`;
+        let tokenDirectory = `./token/`
+        var std = Buffer.from(state, 'base64').toString('utf-8');
+        writeFileSync(tokenPath, std)
+        if (!existsSync(tokenDirectory)) {
+            mkdirSync(tokenDirectory)
         }
-  
-        const response = await ig.account.login(username, password)
-        const userData = await ig.user.info(response.pk)
-        this.user = new ClientUser(this, {
-            ...response,
-            ...userData
-        })
-        this.cache.users.set(this.user.id, this.user)
-        this.emit('debug', 'logged', this.user)
+        if(existsSync(tokenPath)){
 
+        
+            let token = readFileSync(tokenPath, { encoding: 'utf-8' })
+            //await ig.account.login(username,password);
+            await ig.state.deserialize(token);
+            const response = await ig.user.usernameinfo(username)
+            //console.log(response)
+            //console.log(response.pk)
+            const userData = await ig.user.info(response.pk)
+            this.user = new ClientUser(this, {
+                ...response,
+                ...userData
+            })
+            this.cache.users.set(this.user.id, this.user)
+            this.emit('debug', 'logged', this.user)
+            
+            const checkUser = await ig.user.usernameinfo(username)
+            
+        } else {
+            console.log("ERROR: STRİNG BULUNAMADI")
+            process.exit()
+        }
+ 
         const threads = [
             ...await ig.feed.directInbox().items(),
             ...await ig.feed.directPending().items()
@@ -380,18 +399,23 @@ class Client extends EventEmitter {
             }
         })
         ig.realtime.on('receive', (topic, messages) => this.handleRealtimeReceive(topic, messages))
-        ig.realtime.on('error', console.error)
+        ig.realtime.on('error', ig.realtime.connect,console.error )
         ig.realtime.on('close', () => console.error('RealtimeClient closed'))
 
         await ig.realtime.connect({
+            autoReconnect: true,
             irisData: await ig.feed.directInbox().request()
         })
-        // PartialObserver<FbnsNotificationUnknown>
+
         ig.fbns.push$.subscribe((data) => this.handleFbnsReceive(data))
 
         await ig.fbns.connect({
             autoReconnect: true
         })
+        // PartialObserver<FbnsNotificationUnknown>
+       
+
+        
 
         this.ig = ig
         this.ready = true
@@ -400,9 +424,7 @@ class Client extends EventEmitter {
             const eventType = event.shift()
             if (eventType === 'realtime') {
                 this.handleRealtimeReceive(...event)
-            } else if (eventType === 'fbns') {
-                this.handleFbnsReceive(...event)
-            }
+            } 
         })
     }
 
