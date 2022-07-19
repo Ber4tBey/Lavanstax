@@ -20,7 +20,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v0.1.0 Public Beta',
     USERNAME: process.env.USERNAME === undefined ? '' : process.env.USERNAME,
-    PASSWORD: process.env.PASSWORD === undefined ? '' : process.env.PASSWORD,
+    STRING_SESSION: process.env.STRING_SESSION === undefined ? '' : process.env.STRING_SESSION,
     PREFIX: process.env.PREFIX === undefined ? '.' : process.env.PREFIX,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE,
     API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
