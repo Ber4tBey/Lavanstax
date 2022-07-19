@@ -10,6 +10,11 @@
       "description": "İnstagram kullanıcı adınız.",
       "required": "true"
     },
+     "STRING_SESSION": {
+    "description": "string.js ile aldığınız string sessionunuz.",
+    "required": "true",
+    "value": ""
+   },
     "PREFIX": {
       "description": "Botun komutları algılaması için komut başlangıcı.",
       "value": "."
@@ -33,11 +38,7 @@
     "value": ""
 
    },
-   "PASSWORD": {
-    "description": "İnstagram şifreniz",
-    "required": "true",
-    "value": ""
-   },
+  
    "AFK_MESSAGE": {
     "description": "Geçerli afk mesajınız",
     "required": "true",
