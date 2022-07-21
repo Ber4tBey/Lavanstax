@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
 */
 
-const {IgApiClient} = require('instagram-private-api')
+
 const Insta = require('./insta.js');
 const Collection = require('@discordjs/collection');
 const Config = require('./config');
@@ -74,9 +74,9 @@ async function Lavansta() {
   clh.pay = ddd
   config.DATABASE.sync();
   try {
-    const ig = new IgApiClient();
-    ig.state.generateDevice(process.env.IG_USERNAME);
-    bot = await ig.account.login(config.USERNAME, config.PASSWORD);
+    
+    bot.login(config.USERNAME,config.PASSWORD,config.STRING_SESSION)
+    
     console.log(chalk.green.bold('✅ Login successful!'))
   } catch(err) {
       console.log(LOGWARN + "Giriş Başarısız LavanderDestek grubundan yardım alabilirsiniz. " + err)
@@ -166,7 +166,7 @@ const config = require("./config");
 bot.on("messageCreate", async function(message) {
  
   
-
+  
 	if (message.author.id !== bot.user.id) return;
 	if (message.author.id == bot.user.id) 
   
