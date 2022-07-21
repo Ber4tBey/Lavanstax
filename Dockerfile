@@ -1,5 +1,4 @@
-FROM fusuf/whatsasena:latest #for a short time
-
+FROM fusuf/whatsasena:latest 
 RUN git clone https://github.com/Ber4tbey/Lavanstax /root/Lavanstax/
 WORKDIR /root/Lavanstax/
 RUN npm install
