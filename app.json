@@ -10,8 +10,8 @@
       "description": "İnstagram kullanıcı adınız.",
       "required": "true"
     },
-     "STRING_SESSION": {
-    "description": "string.js ile aldığınız string sessionunuz.",
+     "PASSWORD": {
+    "description": "instagram şifreniz.",
     "required": "true",
     "value": ""
    },
