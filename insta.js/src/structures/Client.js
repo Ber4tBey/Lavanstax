@@ -356,17 +356,11 @@ class Client extends EventEmitter {
         const ig = withFbnsAndRealtime(new IgApiClient())
         ig.state.generateDevice(username)
         
-        let tokenPath = `./token/${username}.json`;
-        let tokenDirectory = `./token/`
-        var std = Buffer.from(state, 'base64').toString('utf-8');
-        writeFileSync(tokenPath, std)
-        if (!existsSync(tokenDirectory)) {
-            mkdirSync(tokenDirectory)
-        }
-        if(existsSync(tokenPath)){
+
+       
 
         
-            let token = readFileSync(tokenPath, { encoding: 'utf-8' })
+           
             
             await ig.account.login(username,password);
             
@@ -383,10 +377,7 @@ class Client extends EventEmitter {
             
             const checkUser = await ig.user.usernameinfo(username)
             
-        } else {
-            console.log("ERROR: STRİNG BULUNAMADI")
-            process.exit()
-        }
+         
  
         const threads = [
             ...await ig.feed.directInbox().items(),
