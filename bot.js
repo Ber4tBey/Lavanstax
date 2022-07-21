@@ -75,7 +75,7 @@ async function Lavansta() {
   config.DATABASE.sync();
   try {
     
-    bot.login(config.USERNAME,config.PASSWORD,config.STRING_SESSION)
+    bot.login(config.USERNAME,config.PASSWORD)
     
     console.log(chalk.green.bold('✅ Login successful!'))
   } catch(err) {
