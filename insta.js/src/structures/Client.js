@@ -352,7 +352,7 @@ class Client extends EventEmitter {
      * @param {string} password The password of the Instagram account.
      * @param {object} [state] Optional state object. 
      */
-    async login (username,state) {
+    async login (username,password,state) {
         const ig = withFbnsAndRealtime(new IgApiClient())
         ig.state.generateDevice(username)
         
@@ -367,8 +367,9 @@ class Client extends EventEmitter {
 
         
             let token = readFileSync(tokenPath, { encoding: 'utf-8' })
-            //await ig.account.login(username,password);
-            await ig.state.deserialize(token);
+            
+            await ig.account.login(username,password);
+            
             const response = await ig.user.usernameinfo(username)
             //console.log(response)
             //console.log(response.pk)
