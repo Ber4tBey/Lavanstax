@@ -1,4 +1,4 @@
-FROM fusuf/whatsasena:latest
+FROM ber4tbey/lavanstax:latest
 
 RUN git clone https://github.com/Ber4tbey/Lavanstax /root/Lavanstax/
 WORKDIR /root/Lavanstax/
