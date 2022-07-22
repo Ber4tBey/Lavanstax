@@ -29,8 +29,11 @@
 
 ## Setup
 ### Very Simple Method
-`We are working on it...`
 
+`bash <(curl -L bit.ly/3PdQR4d)`
+
+**Termux Current Version**
+[Termux](https://www.dosya.tc/server37/d6ith3/Termux.apk.html)
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ber4tbey/Lavanstax)
