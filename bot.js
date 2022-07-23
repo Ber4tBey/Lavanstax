@@ -172,7 +172,7 @@ bot.on("messageCreate", async function(message) {
   
 	
 
-	if (message.data.item_type === 'media_share') {
+	/*if (message.data.item_type === 'media_share') {
 		const mediaData = {
 			messageSender: message.author.username,
 			creatorIgHandle: util.extractCreator(message.data),
@@ -189,7 +189,7 @@ bot.on("messageCreate", async function(message) {
                 }
                 await message.chat.sendMessage(`✅ Resim(ler) başarıyla gönderildi! (${Date.now() - start} ms)`);
 		return;
-	};
+	};*/
 	
 		
 
