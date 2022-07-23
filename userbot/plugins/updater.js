@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
         );
       
         message.chat.sendMessage(
-            degisiklikler + '```'
+            degisiklikler 
         
         ); 
     }}
