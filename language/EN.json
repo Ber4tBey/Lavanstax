@@ -1,7 +1,7 @@
 {
-    "__OWENJSON__": true,
-    "LANGUAGE": "Türkçe",
-    "LANGCODE": "tr",
+    "__LAVANJSON__": true,
+    "LANGUAGE": "English",
+    "LANGCODE": "En",
     "AUTHOR": "Ber4tbey",
     "STRINGS": { 
         "_owen": {
@@ -49,8 +49,8 @@
         },
         
         "spammer": {
-         "SPAMMER_DESC": "Spams example: **.spam 10 Hello",
-         "NEED_WRD": "You must enter a text so that I can spam. Example: **.spam 10 Hello**"
+         "SPAMMER_DESC": "Spams example: .spam 10 Hello",
+         "NEED_WRD": "You must enter a text so that I can spam. Example: .spam 10 Hello"
         },
 
         "heroku": {
@@ -108,6 +108,24 @@
             "WEATHER_DESC": "Brings the weather.",
             "NEED_LOCATION": "𝐏𝐥𝐞𝐚𝐬𝐞 𝐞𝐧𝐭𝐞𝐫 𝐚 𝐥𝐨𝐜𝐚𝐭𝐢𝐨𝐧!\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞: .𝑤𝑒𝑎𝑡ℎ𝑒𝑟 𝐿𝑜𝑛𝑑𝑟𝑎"
             
+        },
+        "scrapers": {
+            "TRANSLATE_DESC": "Translates with google translate.",
+            "NEED_TR": "I need a word to translate example .trt merhaba",
+            "LANG": "Language",
+            "FROM": "Translated Language",
+            "RESULT": "Translation"
+           
+            
+    
+        },
+        "vector": {
+            "VECTOR_DESC": "Activates fully functional Vector features. Turn your account into a chatbot!",
+            "ALREADY_ON": "𝙑𝙚𝙘𝙩𝙤𝙧 artificial intelligence already has all functions enabled.",
+            "ALREADY_OFF": "Vector AI is currently semi-functional.",
+            "SUCC_ON": "𝙑𝙚𝙘𝙩𝙤𝙧 Opened Fully Functionally! Please wait a bit! ✅",
+            "SUCC_OFF": "Vector Set to Semi-Functional! Please wait a bit! ☑️",
+            "WR_CMD": "Please just use the off or on command."
         }
    
     
