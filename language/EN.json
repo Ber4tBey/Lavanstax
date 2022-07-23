@@ -1,13 +1,13 @@
 {
-    "__LAVANJSON__": true,
-    "LANGUAGE": "English",
-    "LANGCODE": "En",
+    "__OWENJSON__": true,
+    "LANGUAGE": "Türkçe",
+    "LANGCODE": "tr",
     "AUTHOR": "Ber4tbey",
     "STRINGS": { 
         "_owen": {
                 "COMMAND": "💻𝐋𝐚𝐯𝐚𝐧𝐬𝐭𝐚𝐱 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭:",
-                "NOFOUND": "💻 Please specify an Owen module!",
-                "COMINFO": "⚡️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐩𝐞𝐜𝐢𝐟𝐲 𝐰𝐡𝐢𝐜𝐡 𝐎𝐰𝐞𝐧 𝐦𝐨𝐝𝐮𝐥𝐞 𝐲𝐨𝐮 𝐰𝐨𝐮𝐥𝐝 𝐥𝐢𝐤𝐞 𝐡𝐞𝐥𝐩 𝐰𝐢𝐭𝐡 ! 𝐔𝐬𝐚𝐠𝐞: .𝐥𝐚𝐯𝐚𝐧 <𝐦𝐨𝐝𝐮𝐥𝐞 𝐧𝐚𝐦𝐞>",
+                "NOFOUND": "💻 Please specify an Lavanstax module!",
+                "COMINFO": "⚡️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐩𝐞𝐜𝐢𝐟𝐲 𝐰𝐡𝐢𝐜𝐡 𝐋𝐚𝐯𝐚𝐧𝐬𝐭𝐚𝐱 𝐦𝐨𝐝𝐮𝐥𝐞 𝐲𝐨𝐮 𝐰𝐨𝐮𝐥𝐝 𝐥𝐢𝐤𝐞 𝐡𝐞𝐥𝐩 𝐰𝐢𝐭𝐡 ! 𝐔𝐬𝐚𝐠𝐞: .𝐥𝐚𝐯𝐚𝐧 <𝐦𝐨𝐝𝐮𝐥𝐞 𝐧𝐚𝐦𝐞>",
                 "COMMAND1": "🔧 𝐂𝐨𝐦𝐦𝐚𝐧𝐝:",
                 "ALTERNATE": "🌀 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧:",
                 "USE": "🧿𝐔𝐬𝐚𝐠𝐞:",
