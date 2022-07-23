@@ -22,7 +22,8 @@ module.exports.run = async (bot, message, args,match) => {
     } else {
         plugins.map(
             (plugin) => {
-                mesaj += '**' + plugin.dataValues.name + '**: ' + plugin.dataValues.url + '\n';
+
+                mesaj += plugin.dataValues.name + ': ' + plugin.dataValues.url + '\n';
             }
         );
         return message.chat.sendMessage(mesaj);
