@@ -1,5 +1,5 @@
 {
-    "__LAVANJSON__": true,
+    "__OWENJSON__": true,
     "LANGUAGE": "Türkçe",
     "LANGCODE": "tr",
     "AUTHOR": "Ber4tbey",
@@ -129,6 +129,15 @@
             "SUCC_ON": "𝙑𝙚𝙘𝙩𝙤𝙧, Tam Fonksiyonel Olarak Açıldı! Lütfen Biraz Bekleyin! ✅",
             "SUCC_OFF": "Vector, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️",
             "WR_CMD": "Lütfen sadece off veya on komutunu kullanın."
+        },
+        "spotify": {
+            "SPOTIFY_DESC": "Anlık olarak spotify'da dinlediğiniz müzikleri instagram biyografinizde görüntüleyin.",
+            "ALREADY_ON": "Spotify otomatik biyogeafi zaten açık!",
+            "ALREADY_OFF": "Spotify otomatik biyografi zaten kapalı!",
+            "SUCC_ON": "Spotify otomatik biyografi açıldı! ✅",
+            "SUCC_OFF": "Spotify otomatik biyografi kapatıldı ☑️",
+            "WR_CMD": "Lütfen sadece off veya on komutunu kullanın..",
+            "SPO_KEY": "Lütfen önce SPOTIFY_TOKEN değişkenini ayarlayınız."
         }
 
     
