@@ -118,6 +118,15 @@
             "SUCC_ON": "𝙑𝙚𝙘𝙩𝙤𝙧 Tam işlək vəziyyətdədir! Zəhmət olmasa bir az gözləyin! ✅",
             "SUCC_OFF": "Vektor Yarı Funksional olaraq təyin edildi! Zəhmət olmasa bir az gözləyin! ☑️",
             "WR_CMD": "Zəhmət olmasa, sadəcə off və ya on əmrindən istifadə edin."
+        },
+        "spotify": {
+            "SPOTIFY_DESC": "Spotify-da dinlədiyiniz musiqiyə dərhal İnstaqram bionuzda baxın.",
+            "ALREADY_ON": "Spotify avtomatik bio artıq aktivdir!",
+            "ALREADY_OFF": "Spotify avtomatik bio artıq söndürülüb!",
+            "SUCC_ON": "Spotify avtomatik biosu aktivdir! ✅",
+            "SUCC_OFF": "Spotify avtomatik bio deaktiv edilib ☑️",
+            "WR_CMD": "Zəhmət olmasa, yalnız off və ya açıq əmrindən istifadə edin.",
+            "SPO_KEY": "Əvvəlcə SPOTIFY_TOKEN dəyişənini təyin edin."
         }
         
     
