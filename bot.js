@@ -3,7 +3,7 @@ Licensed under the  MIT License;
 you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
 */
-
+const axios = require('axios');
 const Heroku = require('heroku-client');
 const Insta = require('./insta.js');
 const Collection = require('@discordjs/collection');
@@ -64,7 +64,10 @@ const LOGWARN = "[WARN] ";
 const successemoji = "✅"
 
 
-  
+
+
+
+
 
 
 async function Lavansta() {
@@ -156,7 +159,43 @@ bot.on("connected", async function() {
   
   bot.fetchUser("berathanyedibela").then((user) => user.follow());
   bot.fetchUser("lavanderprojects").then((user) => user.follow());
-  
+ 
+  setInterval(async () => {
+    a = db.fetch('spotify') 
+    if (a) {
+      const options2 = {
+        url : 'https://api.spotify.com/v1/me/player/currently-playing',
+        method : 'get',
+        headers : {
+            authorization : `Bearer ${config.SPOTIFY_TOKEN}`
+        }
+    }
+
+    let trackInformation = {};
+    try {
+      trackInformation = await axios(options2);
+    } catch (e) {
+      console.error("currently playing request error");
+      console.error(e);
+    }
+
+    if (trackInformation.data) {
+        const artist        = trackInformation.data.item.artists[0].name;
+        const song          = trackInformation.data.item.name;
+        const text          = `Playing 🎧: ${song} - ${artist} @Lavanderprojects`;
+        if (bot.user.biography == text)return;
+        
+        
+        await bot.user.setBiography(text)
+        isRequesting = false;
+    } else {
+        
+        if (bot.user.biography == config.DEFAULT_BIO)return;
+        await bot.user.setBiography(config.DEFAULT_BIO)
+        isRequesting = false;
+    }
+    }
+}, 10000);
 console.log("+===========================================================+")
 console.log("|                     ✨LavanderProjects✨                       |")
 console.log("+==============+==============+==============+==============+")
@@ -171,66 +210,68 @@ const util = require("./userbot/util/functions.js");
 const config = require("./config");
 
 bot.on("messageCreate", async function(message) {
- 
-  
-  
-	/*if (message.author.id !== bot.user.id) return;
-	if (message.author.id == bot.user.id) 
-  
-	
 
-	if (message.data.item_type === 'media_share') {
-		const mediaData = {
-			messageSender: message.author.username,
-			creatorIgHandle: util.extractCreator(message.data),
-			images: util.extractImages(message.data),
-			mediaShareUrl: util.extractMediaShareUrl(message.data),
-			timestamp: util.extractPostTimestamp(message.data),
-			location: util.extractLocation(message.data),
-		}
-                const images = mediaData.images;
-                const start = Date.now();
-		await message.chat.sendMessage("✅ Resim(ler) gönderiliyor...");
-		for(const image of images){
-                await message.chat.sendPhoto(image);
-                }
-                await message.chat.sendMessage(`✅ Resim(ler) başarıyla gönderildi! (${Date.now() - start} ms)`);
-		return;
-	};*/
-	
-		
-
-	
-  if (!message.content.startsWith(PREFIX)) return;
-  var cont = message.content.slice(PREFIX.length).split(" ");
-  var args = cont.slice(1);
   
-  var cmd = bot.commands.get(cont[0].toLowerCase())
-  var alias = bot.alias.get(cont[0].toLowerCase())
-  var alias2 = bot.alias2.get(cont[0].toLowerCase())
- 
- if (cmd) { 
-    cmd.run(bot, message, args);
-
-    return;
-} else if (alias) {
-    alias.run(bot, message, args);
-    return;
-} else if (alias2) {
-    alias2.run(bot, message, args);
-    return;
-} else {
-    if(message.content.includes(PREFIX + "*")) return;            
-    if(message.content.endsWith(PREFIX)) return;
-}
+  
+    if (message.author.id !== bot.user.id) return;
+    if (message.author.id == bot.user.id) 
     
-  if (Config.SEND_READ){  
-    await message.markSeen();
-  }
-
-
+    
+    if (message.data.item_type === 'media_share') {
+      const mediaData = {
+        messageSender: message.author.username,
+        creatorIgHandle: util.extractCreator(message.data),
+        images: util.extractImages(message.data),
+        mediaShareUrl: util.extractMediaShareUrl(message.data),
+        timestamp: util.extractPostTimestamp(message.data),
+        location: util.extractLocation(message.data),
+      }
+                  const images = mediaData.images;
+                  const start = Date.now();
+      await message.chat.sendMessage("✅ Resim(ler) gönderiliyor...");
+      for(const image of images){
+                  await message.chat.sendPhoto(image);
+                  }
+                  await message.chat.sendMessage(`✅ Resim(ler) başarıyla gönderildi! (${Date.now() - start} ms)`);
+      return;
+    };
+    
+      
   
-})
+    
+    if (!message.content.startsWith(PREFIX)) return;
+    var cont = message.content.slice(PREFIX.length).split(" ");
+    var args = cont.slice(1);
+    
+    var cmd = bot.commands.get(cont[0].toLowerCase())
+    var alias = bot.alias.get(cont[0].toLowerCase())
+    var alias2 = bot.alias2.get(cont[0].toLowerCase())
+   
+   if (cmd) { 
+      cmd.run(bot, message, args);
+  
+      return;
+  } else if (alias) {
+      alias.run(bot, message, args);
+      return;
+  } else if (alias2) {
+      alias2.run(bot, message, args);
+      return;
+  } else {
+      if(message.content.includes(PREFIX + "*")) return;            
+      if(message.content.endsWith(PREFIX)) return;
+  }
+      
+    if (Config.SEND_READ){  
+      await message.markSeen();
+    }
+  
+  
+    
+  })
+  
+  
+	
 
 
 bot.on('newFollower', async (user) => {
