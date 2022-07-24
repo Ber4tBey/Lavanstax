@@ -1,7 +1,7 @@
 {
     "__OWENJSON__": true,
-    "LANGUAGE": "Türkçe",
-    "LANGCODE": "tr",
+    "LANGUAGE": "Englisj",
+    "LANGCODE": "en",
     "AUTHOR": "Ber4tbey",
     "STRINGS": { 
         "_owen": {
@@ -126,6 +126,15 @@
             "SUCC_ON": "𝙑𝙚𝙘𝙩𝙤𝙧 Opened Fully Functionally! Please wait a bit! ✅",
             "SUCC_OFF": "Vector Set to Semi-Functional! Please wait a bit! ☑️",
             "WR_CMD": "Please just use the off or on command."
+        },
+        "spotify": {
+            "SPOTIFY_DESC": "View the music you listen to on spotify instantly in your Instagram bio.",
+            "ALREADY_ON": "Spotify auto bio is already on!",
+            "ALREADY_OFF": "Spotify auto bio is already turned off!",
+            "SUCC_ON": "Spotify auto bio is on! ✅",
+            "SUCC_OFF": "Spotify auto bio turned off ☑️",
+            "WR_CMD": "Please use the off or on command only.",
+            "SPO_KEY": "Please set the SPOTIFY_TOKEN variable first."
         }
    
     
