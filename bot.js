@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
 */
 
-
+const Heroku = require('heroku-client');
 const Insta = require('./insta.js');
 const Collection = require('@discordjs/collection');
 const Config = require('./config');
@@ -26,6 +26,11 @@ var AFK = {
   reason: false,
   lastseen: 0
 };
+const heroku = new Heroku({
+  token: Config.API_KEY
+});
+let baseURI = '/apps/' + Config.APP_NAME;
+
 
 
 const LavanstaDb = Config.DATABASE.define('Lavansta', {
@@ -59,23 +64,17 @@ const LOGWARN = "[WARN] ";
 const successemoji = "✅"
 
 
+  
+
 
 async function Lavansta() {
-    
-  var clh = { cd: 'L3Jvb3QvRGlzT3dlbi8=', pay: '', exc: 'UlVOIGdpdCBjbG9uZSAkR0lUSFVCX1JFUE9fVVJMICAvcm9vdC9EaXNPd2VuLw==', exc_pl: '', pth_w: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQvd2hhdHNhc2VuYS9Eb2NrZXJmaWxl', pth_v: 'L3Jvb3QvRGlzT3dlbi9Eb2NrZXJmaWxl' }    
-  var ggg = Buffer.from(clh.cd, 'base64')
-  var exc_sl = Buffer.from(clh.exc, 'base64')
-  var ddd = ggg.toString('utf-8')
-  var ptc_one = Buffer.from(clh.pth_w, 'base64')
-  var ptc_nw = ptc_one.toString('utf-8')
-  clh.pth_v = ptc_nw
-  var exc_fn = exc_sl.toString('utf-8')
-  clh.exc_pl = exc_fn
-  clh.pay = ddd
   config.DATABASE.sync();
+  
+
+
   try {
     
-    bot.login(config.USERNAME,config.PASSWORD)
+    bot.login(Config.USERNAME,Config.PASSWORD)
     
     console.log(chalk.green.bold('✅ Login successful!'))
   } catch(err) {
@@ -102,6 +101,14 @@ process.on("warning", (warning) => {
 
 bot.on("connected", async function() {
   
+  if (!Config.DEFAULT_BIO){
+    await heroku.patch(baseURI + '/config-vars', {
+      body: {
+          ["DEFAULT_BIO"]: bot.user.biography
+      
+  }})}
+  
+
   console.log(
       chalk.blueBright.italic('⬇️ Installing external plugins...')
   );
@@ -167,12 +174,12 @@ bot.on("messageCreate", async function(message) {
  
   
   
-	if (message.author.id !== bot.user.id) return;
+	/*if (message.author.id !== bot.user.id) return;
 	if (message.author.id == bot.user.id) 
   
 	
 
-	/*if (message.data.item_type === 'media_share') {
+	if (message.data.item_type === 'media_share') {
 		const mediaData = {
 			messageSender: message.author.username,
 			creatorIgHandle: util.extractCreator(message.data),
