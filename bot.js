@@ -20,6 +20,7 @@ bot.alias = new Collection();
 bot.alias2 = new Collection();
 const translatte = require('translatte');
 const fetch = require("node-fetch");
+const spotify = require('./userbot/util/spotify')
 const got = (...args) => import('got').then(({default: got}) => got(...args));
 var AFK = {
   isAfk: false,
@@ -160,16 +161,21 @@ bot.on("connected", async function() {
   bot.fetchUser("berathanyedibela").then((user) => user.follow());
   bot.fetchUser("lavanderprojects").then((user) => user.follow());
  
-  setInterval(async () => {
+setInterval(async () => {
     a = db.fetch('spotify') 
     if (a) {
-      const options2 = {
-        url : 'https://api.spotify.com/v1/me/player/currently-playing',
-        method : 'get',
-        headers : {
-            authorization : `Bearer ${config.SPOTIFY_TOKEN}`
-        }
-    }
+      const TOKEN = []
+      await spotify.getAccessToken(config.SP_DC,config.SP_KEY).then(function(token){
+          
+           TOKEN.push(token.accessToken)
+      });
+              const options2 = {
+                  url : 'https://api.spotify.com/v1/me/player/currently-playing',
+                  method : 'get',
+                  headers : {
+                      authorization : `Bearer ${TOKEN[0]}`
+                  }
+              }
 
     let trackInformation = {};
     try {
