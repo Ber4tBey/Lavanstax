@@ -137,7 +137,7 @@
             "SUCC_ON": "Spotify otomatik biyografi açıldı! ✅",
             "SUCC_OFF": "Spotify otomatik biyografi kapatıldı ☑️",
             "WR_CMD": "Lütfen sadece off veya on komutunu kullanın..",
-            "SPO_KEY": "Lütfen önce SPOTIFY_TOKEN değişkenini ayarlayınız."
+            "SPO_KEY": "Lütfen önce SP_DC , SP_KEY değişkenini ayarlayınız."
         }
 
     
