@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
         await message.chat.sendMessage(Lang.ALREADY_ON)
         return;
     }   
-    if (!config.SPOTIFY_TOKEN){
+    if (!config.SP_DC){
         await message.chat.sendMessage(Lang.SPO_KEY)
         return;
     }
@@ -43,7 +43,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     command: "spotify",
-    alias: "chatbot",
     description: `${Lang.VECTOR_DESC}`,
     usage: 'on/off'
 }
