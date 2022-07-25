@@ -126,7 +126,7 @@
             "SUCC_ON": "Spotify avtomatik biosu aktivdir! ✅",
             "SUCC_OFF": "Spotify avtomatik bio deaktiv edilib ☑️",
             "WR_CMD": "Zəhmət olmasa, yalnız off və ya açıq əmrindən istifadə edin.",
-            "SPO_KEY": "Əvvəlcə SPOTIFY_TOKEN dəyişənini təyin edin."
+            "SPO_KEY": "Əvvəlcə SP_DC , SP_KEY dəyişənini təyin edin."
         }
         
     
