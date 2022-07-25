@@ -33,5 +33,6 @@ module.exports = {
     PENDING_REQUEST: process.env.PENDING_REQUEST === undefined ? 'true' : process.env.PENDING_REQUEST,
     FOLLOW_SEND: process.env.FOLLOW_SEND === undefined ? 'true' : process.env.FOLLOW_SEND,
     DEFAULT_BIO: process.env.DEFAULT_BIO === undefined ? '❤️ @Lavanderprojects ' : process.env.DEFAULT_BIO,
-    SPOTIFY_TOKEN : process.env.SPOTIFY_TOKEN === undefined ? '' : process.env.SPOTIFY_TOKEN
+    SP_DC : process.env.SP_DC === undefined ? '' : process.env.SP_DC,
+    SP_KEY : process.env.SP_KEY === undefined ? '' : process.env.SP_KEY
     }
