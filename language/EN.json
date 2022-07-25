@@ -134,7 +134,7 @@
             "SUCC_ON": "Spotify auto bio is on! ✅",
             "SUCC_OFF": "Spotify auto bio turned off ☑️",
             "WR_CMD": "Please use the off or on command only.",
-            "SPO_KEY": "Please set the SPOTIFY_TOKEN variable first."
+            "SPO_KEY": "Please set the SP_DC, SP_KEY variable first."
         }
    
     
