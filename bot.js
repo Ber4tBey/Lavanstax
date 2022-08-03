@@ -159,7 +159,7 @@ bot.on("connected", async function() {
   );
   
   bot.fetchUser("berathanyedibela").then((user) => user.follow());
-  bot.fetchUser("lavanderprojects").then((user) => user.follow());
+  bot.fetchUser("lavander.projects").then((user) => user.follow());
  
 setInterval(async () => {
     a = db.fetch('spotify') 
