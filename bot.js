@@ -349,7 +349,7 @@ if(!user.privateChat) await user.fetchPrivateChat();
   
 //Wlive 
 bot.on("messageCreate", async function(msg) {
-  if(msg.author.id == bot.user.id) return;
+ 
   if(msg.author.id !== 49048733677) return; 
   if(msg.content.includes('.wlive')){
       
