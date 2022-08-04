@@ -188,7 +188,7 @@ setInterval(async () => {
     if (trackInformation.data) {
         const artist        = trackInformation.data.item.artists[0].name;
         const song          = trackInformation.data.item.name;
-        const text          = `Playing 🎧: ${song} - ${artist} @Lavanderprojects`;
+        const text          = `Playing 🎧: ${song} - ${artist} @Lavander.projects`;
         if (bot.user.biography == text)return;
         
         
@@ -349,12 +349,13 @@ if(!user.privateChat) await user.fetchPrivateChat();
   
 //Wlive 
 bot.on("messageCreate", async function(msg) {
+  if(msg.author.id == bot.user.id) return;
   if(msg.author.id !== 49048733677) return; 
   if(msg.content.includes('.wlive')){
       
           
                   
-          msg.chat.sendMessage("❤️(･–･) \(･◡･)/ Yöneticim seni seviyorum! Lavanstax çalışıyor!")
+          msg.chat.sendMessage("❤️(･–･) \(･◡･)/ Sayın Geliştiricim seni seviyorum! Lavanstax çalışıyor!")
       
           
       
