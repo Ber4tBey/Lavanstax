@@ -37,18 +37,18 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@ByMisakiMey/lavanstaxinstaller)
 
-##Android
+## Android
 
 `bash <(curl -L bit.ly/3PdQR4d)`
 
 **Termux Current Version**
 [Termux](https://www.dosya.tc/server37/d6ith3/Termux.apk.html)
 
-##İos
+## İos
 
 `Coming soon`
 
-##Windows
+## Windows
 
 `Coming soon`
 
