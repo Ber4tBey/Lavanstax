@@ -52,6 +52,9 @@
 
 `Coming soon`
 
+
+## Heroku 
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ber4tbey/Lavanstax)
 
 ### The Hard Method
