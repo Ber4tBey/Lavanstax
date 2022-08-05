@@ -30,14 +30,27 @@
 ## 🔎 What is Lavanstax?
 **Lavanstax,** is a İnstagram helper bot written by [Ber4tbey](https://github.com/Ber4tbey). Does not log into your account It is written on İnstagram web API.
 
-## Setup
+
 ### Very Simple Method
+
+##Online Method
+
+[![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@ByMisakiMey/lavanstaxinstaller)
+
+##Android
 
 `bash <(curl -L bit.ly/3PdQR4d)`
 
 **Termux Current Version**
 [Termux](https://www.dosya.tc/server37/d6ith3/Termux.apk.html)
 
+##İos
+
+`Coming soon`
+
+##Windows
+
+`Coming soon`
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ber4tbey/Lavanstax)
 
