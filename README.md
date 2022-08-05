@@ -16,7 +16,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/ber4tbey/lavanstax?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/ber4tbey/lavanstax?style=flat-square)
 
 ## 📢 Guide
-> [Also for support & help please come our Telegram group.](https://t.me/LavanderSupport) or [İnstagram](https://instagram.com/lavander.projects)
+> [Also for support & help please come our Telegram group](https://t.me/LavanderSupport) & [İnstagram](https://instagram.com/lavander.projects)
 
 > [Install Guide/Kurulum Yardımcısı/Qurulum Müavin](https://github.com/Ber4tbey/Lavanstax/wiki)
 
