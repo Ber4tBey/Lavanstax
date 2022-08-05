@@ -6,7 +6,7 @@
     Lavanstax project - Makes it easy and fun to use İnstagram. Also first userbot for İnstagram
     <br>
         |
-        <a href="https://instagram.com/lavanderprojects">İnstagram</a> |
+        <a href="https://instagram.com/lavander.projects">İnstagram</a> |
         <a href="https://t.me/Lavanstax">Telegram Channel</a> |
         <a href="https://t.me/LavanderSupport">Telegram Group</a> |
     <br>
