@@ -33,7 +33,8 @@
 
 ### Very Simple Method
 
-##Online Method
+
+## Online Method
 
 [![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@ByMisakiMey/lavanstaxinstaller)
 
