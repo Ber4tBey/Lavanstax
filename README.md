@@ -103,5 +103,9 @@ Email: ```beratbeywinchester@gmail.com```
 ## License
 This project is protected by `MIT` license.
 
+`LavanderProjects © 2022 - All rights reserved.`
+
 ### Disclaimer
 `İnstagram` name, its variations and the logo are registered trademarks of Meta Inc. We have nothing to do with the registered trademark
+
+
