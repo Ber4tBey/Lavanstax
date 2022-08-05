@@ -3,6 +3,7 @@
   <h1>Lavanstax</h1>
 </div>
 <p align="center">
+  <img src="[https://i.hizliresim.com/18kmwib.jpeg](https://raw.githubusercontent.com/Ber4tBey/Lavanstax/master/lavanstax.jpg)" width="400" height="400">
     Lavanstax project - Makes it easy and fun to use İnstagram. Also first userbot for İnstagram
     <br>
         |
