@@ -1,9 +1,8 @@
 <div align="center">
-
+  <img src="https://github.com/Ber4tBey/Lavanstax/blob/master/lavanstax.jpg" width="400" height="400">
   <h1>Lavanstax</h1>
 </div>
 <p align="center">
-  <img src="https://github.com/Ber4tBey/Lavanstax/blob/master/lavanstax.jpg" width="400" height="400">
     Lavanstax project - Makes it easy and fun to use İnstagram. Also first userbot for İnstagram
     <br>
         |
