@@ -7,10 +7,14 @@ Lavanstax - Ber4tbey
 
 const fs = require('fs');
 const Db = require('./sql/plugin');
-
+const Heroku = require('heroku-client');
 const Language = require('../../language');
 const Lang = Language.getString('_plugin');
+const heroku = new Heroku({
+  token: Config.API_KEY
+});
 
+let baseURI = '/apps/' + Config.APP_NAME;
 const got = (...args) => import('got').then(({default: got}) => got(...args));
 
 
@@ -49,6 +53,9 @@ module.exports.run = async (bot, message, args,match) => {
 
         await Db.installPlugin(url, plugin_name);
         message.chat.sendMessage(Lang.INSTALLED);
+        await heroku.delete(baseURI + '/dynos').catch(async (error) => {
+         message.chat.sendMessage(error.message);
+    });
     }
      
     }
