@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
 */
 
-
+const Config = require('../../config');
 const fs = require('fs');
 const Db = require('./sql/plugin');
 const Heroku = require('heroku-client');
