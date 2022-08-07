@@ -1,5 +1,5 @@
 {
-    "__OWENJSON__": true,
+    "__LAVANJSON__": true,
     "LANGUAGE": "Türkçe",
     "LANGCODE": "tr",
     "AUTHOR": "Ber4tbey",
@@ -20,14 +20,14 @@
             "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
             "INVALID_URL": "𝐿𝑢̈𝑡𝑓𝑒𝑛 𝑏𝑖𝑟 𝑔𝑒𝑐̧𝑒𝑟𝑙𝑖 𝑈𝑅𝐿 𝑔𝑖𝑟𝑖𝑛𝑖𝑧!",
             "INVALID_PLUGIN": "❌ 𝑃𝑙𝑢𝑔𝑖𝑛𝑖𝑛𝑖𝑧 ℎ𝑎𝑡𝑎𝑙𝑖!\n𝐻𝑎𝑡𝑎:",
-            "INSTALLED": "✅ Plugin başarılı bir şekilde yüklendi!",
+            "INSTALLED": "✅ Plugin başarılı bir şekilde yüklendi! Yeniden başlatılıyor...",
             "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
             "INSTALLED_FROM_REMOTE": "Dışarıdan yüklediğiniz pluginler:\n",
             "NO_PLUGIN": "Dışarıdan hiç plugin yüklememişsiniz!",
             "REMOVE_DESC": "Plugin kaldırır.",
             "NEED_PLUGIN": "𝐿𝑢̈𝑡𝑓𝑒𝑛 𝑏𝑖𝑟 𝑃𝑙𝑢𝑔𝑖𝑛 𝑔𝑖𝑟𝑖𝑛𝑖𝑧! 𝑂̈𝑟𝑛𝑒𝑘: .plugin test",
             "NOT_FOUND_PLUGIN": "𝐵𝑜̈𝑦𝑙𝑒 𝑏𝑖𝑟 𝑝𝑙𝑢𝑔𝑖𝑛 𝑏𝑒𝑙𝑘𝑖 𝑦𝑢̈𝑘𝑙𝑒𝑑𝑖𝑛𝑖𝑧, 𝑏𝑒𝑙𝑘𝑖 𝑑𝑒 𝑦𝑢̈𝑘𝑙𝑒𝑚𝑒𝑑𝑖𝑛𝑖𝑧. 𝐴𝑚𝑎 𝑠̧𝑢 𝑎𝑛 𝑜𝑙𝑚𝑎𝑑𝑖𝑔̆𝑖 𝑘𝑒𝑠𝑖𝑛.",
-            "DELETED": "✅ 𝑀𝑜𝑑𝑢̈𝑙 𝑏𝑎𝑠̧𝑎𝑟𝑖𝑦𝑙𝑎 𝑠𝑖𝑙𝑖𝑛𝑑𝑖! 𝐷𝑒𝑔̆𝑖𝑠̧𝑖𝑘𝑙𝑖𝑘𝑙𝑒𝑟𝑖𝑛 𝑢𝑦𝑔𝑢𝑙𝑎𝑛𝑚𝑎𝑠𝑖 𝑖𝑐̧𝑖𝑛 𝑦𝑒𝑛𝑖𝑑𝑒𝑛 𝑏𝑎𝑠̧𝑙𝑎𝑡𝑚𝑎𝑛𝑖𝑧 𝑔𝑒𝑟𝑒𝑘𝑚𝑒𝑘𝑡𝑒𝑑𝑖𝑟."
+            "DELETED": "✅ ᴍᴏᴅᴜ̈ʟ ʙᴀşᴀʀıʏʟᴀ sɪʟɪɴᴅɪ! ʏᴇɴɪᴅᴇɴ ʙᴀşʟᴀᴛıʟıʏᴏʀ... "
         },
         "admin": {
             "BAN_DESC": "Gruptan kişi banlar. Komutun yanına kişiyi etiketleyin.",
@@ -111,7 +111,7 @@
         },
         "scrapers": {
             "TRANSLATE_DESC": "Google çeviri ile çeviri yapar.",
-            "TRANSLATE_USAGE": ".trt tr it (Türkçeden İtalyaca Çeviri)",
+            "TRANSLATE_USAGE": ".trt  Hello",
             "NEED_TR": "Çeviri yapabilmem için bir kelimeye ihtiyacım var örnek .trt hello",
             "LANG": "Dil",
             "FROM": "Çevirilen Dil",
