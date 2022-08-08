@@ -20,7 +20,7 @@
 
 > [Install Guide/Kurulum Yardımcısı/Qurulum Müavin](https://github.com/Ber4tbey/Lavanstax/wiki)
 
-> [Video Guide]()
+> [Video Guide](https://www.youtube.com/watch?v=FzP9DET6d98)
 
 
 
