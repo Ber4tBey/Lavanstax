@@ -49,8 +49,8 @@
         },
         
         "spammer": {
-         "SPAMMER_DESC": "Spam atar örnek: **.spam 10 Merhaba",
-         "NEED_WRD": "Spam Yapabilmem için yazı girmelisini örnek: **.spam 10 Merhaba"
+         "SPAMMER_DESC": "Spam atar örnek: .spam 10 Merhaba",
+         "NEED_WRD": "Spam Yapabilmem için yazı girmelisini örnek: .spam 10 Merhaba"
         },
 
         "heroku": {
@@ -90,9 +90,40 @@
         
         "system_stats": {
             "ALIVE_DESC": "Bot çalışıyor mu?",
-            "PING_DESC": "Botunuzun pingini ölçer."
+            "PING_DESC": "Botunuzun pingini ölçer.",
+            "PING_S": "📊 Pinginiz ölçülüyor..."
+            
         },
-       
+        "user": {
+            "BLOCKED": "Bunu yapmak istemezdim ama bunu bana yaptırmaya mecbur bıraktın seni engelledim.",
+            "BLOCK_NEED": "Lütfen bir kullanıcı adı belirtiniz Örnek: .block berathanyedibela",
+            "UNBLOCK_NEED": "Lütfen bir kullanıcı adı belirtiniz Örnek: .unblock berathanyedibela",
+            "BLOCK_DESC": "Belirttiğiniz kullanıcıyı engeller.",
+            "FOLLOWED": "Başarıyla takibe alındı.",
+            "FOLLOW_NEED": "Lütfen bir kullanıcı adı belirtiniz Örnek: .follow berathanyedibela",
+            "FOLLOW_DESC":"İnstagram hesaplarını takip eder",
+            "UNFOLLOW_NEED": "Lütfen bir kullanıcı adı belirtiniz Örnek: .unfollow berathanyedibela",
+            "UNFOLLOW_DESC": "Takipte olduğun instagram hesabını takipten çıkartır.",
+            "UNFOLLOWED": "Başarıyla takipten çıkıldı",
+            "INFO_NEED": "Bilgileri getirebilmem için bir kullanıcı adına ihtiyacım var. Kullanım: .info berathanyedibela",
+            "GET_INFO": "Bilgiler alınıyor...",
+            "NAME": "Tam isim: ",
+            "USERNAME": "Kullanıcı Adı: ",
+            "BİOGRAPHY": "Biyografi: ",
+            "FOLLOWER": "Takipçi: ",
+            "FOLLOW": "Takip",
+            "VERIFY": "Onaylı",
+            "PRIVATE": "Gizli",
+            "POST": "Paylaşım",
+            "INFO_DESC": "Kullanıcı hakkında bilgileri getirir.",
+            "BIOGRAPH_CHANG": "Biyografim başarıyla değiştirildi.",
+            "BIOGRAPH_DESC": "Biyografinizi değiştirir.",
+            "BIO_NEED": "Biyografinizi ayarlayabilmem için bir yazıya ihtiyacım var. Kullanım: .setbio İ dont life in your.",
+            "NEED_SPAM": "Spamlamam için bir yazıya ihtiyacım var. Kullanım: .spam 10 Merhaba",
+            "SPAM_DESC": "Spam atar"
+
+        },
+
         "updater": {
             "MESSAGE_T_LONG": "Değişiklik sayısı çok fazla olduğu için dosya olarak gönderiyorum.",
             "UPDATER_DESC": "Botunuzu günceller.",
