@@ -1,3 +1,4 @@
+
 {
     "__LAVANJSON__": true,
     "LANGUAGE": "English",
@@ -88,11 +89,38 @@
            
         },
         
+        
         "system_stats": {
             "ALIVE_DESC": "Is the bot working??",
             "PING_DESC": "Measures your bot's ping."
         },
-       
+
+        "user": {
+            "BLOCKED": "I didn't want to do this, but you forced me to do it, and I blocked you.",
+            "BLOCK_NEED": "Please specify a username Example: .block berathanyedibela",
+            "UNBLOCK_NEED": "Please specify a username Example: .unblock berathanyedibela",
+            "BLOCK_DESC": "Blocks the user you specify.",
+            "FOLLOWED": "Successfully followed.",
+            "FOLLOW_NEED": "Please specify a username Example: .follow berathanyedibela",
+            "FOLLOW_DESC":"Follows Instagram accounts.",
+            "UNFOLLOW_NEED": "Please specify a username Example: .unfollow berathanyedibela",
+            "UNFOLLOW_DESC": "Unfollow the Instagram account you follow.",
+            "UNFOLLOWED": "Successfully unfollowed.",
+            "INFO_NEED": "I need a username so I can fetch the information. Usage: .info berathanyedibela",
+            "GET_INFO": "Receiving information...",
+            "NAME": "Full name: ",
+            "USERNAME": "User name: ",
+            "BİOGRAPHY": "Biography: ",
+            "FOLLOWER": "Follower: ",
+            "FOLLOW": "Follow-up",
+            "VERIFY": "Approved",
+            "PRIVATE": "Private",
+            "POST": "Post",
+            "INFO_DESC": "Returns information about the user.",
+            "BIOGRAPH_CHANG": "My bio has been successfully changed.",
+            "BIOGRAPH_DESC": "It changes your bio.",
+            "BIO_NEED": "I need a post so I can adjust your bio. Usage: .setbio İ dont life in your."
+        },
         "updater": {
             "MESSAGE_T_LONG": "I am sending it as a file because the number of changes is too many.",
             "UPDATER_DESC": "Updates your bot.",
