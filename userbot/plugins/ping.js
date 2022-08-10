@@ -5,13 +5,14 @@ Lavanstax - Ber4tbey
 */
 
 
-
+const Language = require("../../language")
+const Lang = Language.getString('system_stats');
 module.exports.run = async(client, message,args) => {
 	
         
 	message.delete();   
 	const start = Date.now();
-        message.chat.sendMessage("📊 Pinginiz ölçülüyor...").then(() => {
+        message.chat.sendMessage(Lang.PING_S).then(() => {
 	const diff = (Date.now() - start);
 	message.chat.sendMessage(`📊 Ping : ${diff} ms.`);
         })

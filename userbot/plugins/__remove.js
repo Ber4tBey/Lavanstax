@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args,match) => {
         await plugin[0].destroy();
         delete require.cache[require.resolve('./' + mesaj + '.js')]
         fs.unlinkSync('./userbot/plugins/' + mesaj + '.js');
-        return message.chat.sendMessage( Lang.DELETED);
+        await message.chat.sendMessage( Lang.DELETED);
         await heroku.delete(baseURI + '/dynos').catch(async (error) => {
          message.chat.sendMessage(error.message);
     });

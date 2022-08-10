@@ -4,7 +4,8 @@ you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
 */
 
-
+const Language = require("../../language")
+const Lang = Language.getString('profile');
 
 module.exports.run = async(client, message,args) => {
 
@@ -12,7 +13,7 @@ module.exports.run = async(client, message,args) => {
        message.delete();
     {
       client.fetchUser(mesaj).then((user) => user.unblock());
-      message.chat.sendMessage("Engelin kaldırıldı.")
+      message.chat.sendMessage(Lang.UNBLOCKED)
     }
     
   };
@@ -20,6 +21,6 @@ module.exports.run = async(client, message,args) => {
   
     module.exports.config = {	
       command: `unblock`,
-      description: "Engellemiş olduğun instagram hesabının engelini kaldırır.",
+      description: `${Lang.UNBLOCK_DESC}`,
         
     }

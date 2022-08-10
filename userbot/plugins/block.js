@@ -4,12 +4,18 @@ you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
 */
 
-     module.exports.run = async(client, message,args) => {
-          let mesaj = args.join(' ');
+
+
+
+const Language = require("../../language")
+const Lang = Language.getString('user');
+module.exports.run = async(client, message,args) => {
+          let mesaj = args.join('');
+          if (mesaj.length < 1) return message.chat.sendMessage(Lang.BLOCK_NEED)
        message.delete();
     {
       client.fetchUser(mesaj).then((user) => user.block());
-      message.chat.sendMessage("Bunu yapmak istemezdim ama bunu bana yaptırmaya mecbur bıraktın seni engelledim.")
+      message.chat.sendMessage(Lang.BLOCKED)
     }
     
   };
@@ -17,7 +23,7 @@ Lavanstax - Ber4tbey
         
     
 
-  module.exports.config = {
+module.exports.config = {
     command: `block`,
-    description: "Belirttiğiniz kullanıcıyı engeller.",
+    description: `${Lang.BLOCK_DESC}`,
   }
