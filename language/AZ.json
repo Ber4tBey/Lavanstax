@@ -84,6 +84,34 @@
             "ALIVE_DESC": "Bot işləyirmi?",
             "PING_DESC": "Botunuzun pingini ölçər."
         },
+
+        "user": {
+            "BLOCKED": "Mən bunu etmək istəmirdim, amma sən məni buna məcbur etdin, mən də səni blokladım.",
+            "BLOCK_NEED": "Zəhmət olmasa istifadəçi adını göstərin Nümunə: .block berathanyedibela",
+            "UNBLOCK_NEED": "Lütfən, istifadəçi adını göstərin Nümunə: .berathanyedibela blokunu açın",
+            "BLOCK_DESC": "Göstərdiyiniz istifadəçini bloklayır.",
+            "FOLLOWED": "Uğurla izlənildi.",
+            "FOLLOW_NEED": "Zəhmət olmasa istifadəçi adını göstərin Nümunə: .follow berathanyedibela",
+            "FOLLOW_DESC":"Instagram hesablarını izləyir",
+            "UNFOLLOW_NEED": "Lütfən, istifadəçi adı göstərin Nümunə: .unfollow berathanyedibela",
+            "UNFOLLOW_DESC": "İzlədiyiniz Instagram hesabından çıxın.",
+            "UNFOLLOWED": "Uğurla izləmə dayandırıldı",
+            "INFO_NEED": "Mənə istifadəçi adı lazımdır ki, məlumatı əldə edim. İstifadəsi: .info berathanyedibela",
+            "GET_INFO": "Məlumat qəbul edilir...",
+            "NAME": "Tam adı: ",
+            "USERNAME": "İstifadəçi adı: ",
+            "BİOGRAPHY": "Bioqrafiya: ",
+            "FOLLOWER": "İzləyici: ",
+            "FOLLOW": "İzlə",
+            "VERIFY": "Təsdiq edildi",
+            "PRIVATE": "Gizli",
+            "POST": "Paylaşma",
+            "INFO_DESC": "İstifadəçi haqqında məlumatı qaytarır.",
+            "BIOGRAPH_CHANG": "Biom uğurla dəyişdirildi.",
+            "BIOGRAPH_DESC": "Bu, bio-nu dəyişir.",
+            "BIO_NEED": "Mənə bir post lazımdır ki, bionuzu tənzimləyəm. İstifadəsi: .setbio I dont life in your."
+        },
+        
         "updater": {
             "MESSAGE_T_LONG": "Dəyişikliklərin sayı çox olduğu üçün onu fayl olaraq göndərirəm.",
             "UPDATER_DESC": "Botunuzu güncəlləyər.",
