@@ -212,7 +212,6 @@ console.log("Bot versiyonunuz: Lavan ==>" +  Config.VERSION)
 })
 
 
-const util = require("./userbot/util/functions.js");
 const config = require("./config");
 
 bot.on("messageCreate", async function(message) {
