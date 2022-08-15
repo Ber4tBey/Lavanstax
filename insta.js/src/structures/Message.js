@@ -62,7 +62,7 @@ class Message {
         if (data.item_type === 'link') {
             this.content = data.link.text
         }
-        /**
+        /*/**
          * @typedef {object} StoryShareData
          * @property {User} author The user who made the story
          * @property {string} sourceURL The url of the story's image/video
@@ -70,8 +70,8 @@ class Message {
         /**
          * @type {StoryShareData?}
          * The data concerning the shared story
-         */
-        this.storyShareData = undefined
+         *
+        
         if (data.item_type === 'story_share') {
             const msg = data.story_share.message
             if (msg === undefined || msg === 'No longer available' || msg.startsWith("This story is hidden because")) {
@@ -85,7 +85,7 @@ class Message {
                     sourceURL: data.story_share.media.image_versions2.candidates[0].url
                 }
             }
-        }
+        }*/
         /**
          * @typedef {object} MessageMediaData
          * @property {boolean} isLike Whether the media is a like (mediaData.url will be `null`)
