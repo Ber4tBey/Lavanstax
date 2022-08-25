@@ -54,11 +54,16 @@
     "required": "true",
     "value": "false"
    },
-   "PENDING_REQUEST": {
-   "description": "DM isteklerini otomatik onaylar",
+   "PM_AUTO_BAN": {
+   "description": "DM koruması",
    "required": "true",
-   "value": "false"
+   "value": "true"
   },
+  "PM_MESSAGE": {
+    "description": "DM koruması mesajınz",
+    "required": "true",
+    "value": "Hey! {mention} Merhaba. \n👩🏻‍💻Ben {my_firstname}  Sekreteriyim. \n❎Üzgünüm, Sahibim sizi onaylamamış. \n🔃Onaylayana kadar bu mesajı tekrar tekrar atacağım \n\n✔️Yakında sizi onaylar. \n📜Mesajınızı görmesi ve sizi onaylaması için sizi listeye alıyorum.. \n \n \n📜Listeye alma işlemi başlatıldı.... \n🗃Bilgiler alınıyor.... \n✅Bilgiler alındı.... \n \n \n👉🏻Adınız: {first_name} \n👉🏻Kullanıcı adınız: {username} \n \n📜Listeye alındınız. "
+   },
   "FOLLOW_SEND": {
     "description": "Sizi takip etmeye başlayanlara dm den mesaj gönderir.",
     "required": "true",
