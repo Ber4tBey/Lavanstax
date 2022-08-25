@@ -3,6 +3,7 @@ Licensed under the  MIT License;
 you may not use this file except in compliance with the License.
 Lavanstax - Ber4tbey
 */
+
 const axios = require('axios');
 const Heroku = require('heroku-client');
 const Insta = require('./insta.js');
@@ -202,6 +203,14 @@ setInterval(async () => {
     }
     }
 }, 10000);
+
+
+const pending = await bot.ig.feed.directPending().items();
+if (Config.PM_AUTO_BAN == 'true'){
+for (const inbox of pending) {
+    const chat = await bot.fetchChat(inbox.thread_id, false);
+    await chat.approve();  // İstek atan olursa otomatik onaylar.
+}}
 console.log("+===========================================================+")
 console.log("|                     ✨LavanderProjects✨                       |")
 console.log("+==============+==============+==============+==============+")
@@ -212,19 +221,19 @@ console.log("Bot versiyonunuz: Lavan ==>" +  Config.VERSION)
 })
 
 
+
 const config = require("./config");
 
 bot.on("messageCreate", async function(message) {
 
   
-  
+    
+     
+     
     if (message.author.id !== bot.user.id) return;
     if (message.author.id == bot.user.id) 
     
-    
-    
-    
-      
+  
   
     
     if (!message.content.startsWith(PREFIX)) return;
@@ -235,7 +244,7 @@ bot.on("messageCreate", async function(message) {
     var alias = bot.alias.get(cont[0].toLowerCase())
     var alias2 = bot.alias2.get(cont[0].toLowerCase())
    
-   if (cmd) { 
+   if (cmd) {
       cmd.run(bot, message, args);
   
       return;
@@ -327,8 +336,81 @@ if(!user.privateChat) await user.fetchPrivateChat();
  }}});
 
      
-      
+const Permit = require('./userbot/plugins/sql/pmpermit');
+const Languagee = require('./language');
+const Langg = Languagee.getString('user');
+
+bot.on("messageCreate", async function(message) {
+  if (config.PM_AUTO_BAN == 'false')return;
+  if (message.author.id == bot.user.id)return;
+  if (message.chat.isGroup)return;
+  var mention = Config.PM_MESSAGE
+  let ann = message.chat.users
   
+  const chatt = []
+  ann.each(user => chatt.push(user.id)) // Kullanıcı id sini alıyoruz.
+
+  chat_id = chatt[0]
+  const path = `./${chat_id}` 
+
+ 
+  idd = (chatt[0])
+    
+    var aprv = await Permit.PermitDB.findAll({ // Approve kontrol
+        where: {uid: idd}
+    });
+
+    if (aprv.length >= 1) {
+        return false;
+    } else {
+      let warn1 = { 
+        toplam : 0
+    };
+      let fileExists = fs.existsSync(`./${chat_id}.json`); // Mesaj sayısını kaydediyoruz
+      if (!fileExists) {
+        let dataa = JSON.stringify(warn1);
+        fs.writeFileSync(`${chat_id}.json`, dataa);
+      }
+      const data = fs.readFileSync(`./${chat_id}.json`,
+        {encoding:'utf8', flag:'r'});
+  pardata = JSON.parse(data)
+   if (pardata.toplam >= 5){ 
+    let warn1 = { 
+      toplam : 0
+  };
+  let dataa = JSON.stringify(warn1);
+  fs.writeFileSync(`${chat_id}.json`, dataa);  
+    
+     await message.chat.sendMessage(Langg.BLOCKED)
+     return bot.fetchUser(message.author.username).then((user) => user.block());
+   }
+      if (fs.existsSync(path)) {
+        
+        
+    } else {
+      let fileExists = fs.existsSync(`./${chat_id}.json`);
+      if (!fileExists) {
+        fs.writeFileSync(`${chat_id}.json`, "");
+      } 
+        const data = fs.readFileSync(`./${chat_id}.json`,
+        {encoding:'utf8', flag:'r'});
+  pardata = JSON.parse(data)
+  
+      
+      
+      
+      let warn1 = { 
+        toplam : pardata.toplam + 1
+    };
+    let dataa = JSON.stringify(warn1);
+     fs.writeFileSync(`${chat_id}.json`, dataa);
+    }
+        return await message.chat.sendMessage(mention.replace('{mention}' ,message.author.fullName).replace('{my_firstname}', bot.user.fullName).replace('{username}', message.author.username).replace('{first_name}', message.author.fullName))
+    }
+ 
+})
+      
+      
 //Wlive 
 bot.on("messageCreate", async function(msg) {
  
@@ -391,11 +473,11 @@ bot.on("messageCreate", async function(msg) {
 
 //Afk dan çıkarma 
 bot.on("messageCreate", async function(msg,args) {
- b = db.fetch('reason')
+b = db.fetch('reason')
 if (msg.content.startsWith('❤️(･–･)'))return;
 if (msg.content.startsWith('.afk'))return;
 if (msg.content.startsWith(Lang.IM_AFK)) return;
-if (msg.content.startsWith(Config.AFK_MESSAGE))return;
+if (msg.content.startsWith(Config.AFK_MESSAGE ))return;
   if(msg.author.id !== bot.user.id) return;
   a = db.fetch('isAfk')
       if (a == 'true') {
