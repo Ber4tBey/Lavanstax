@@ -70,7 +70,20 @@ const successemoji = "✅"
 
 
 
-
+async function blacklistchk(userid){
+  const url1 = 'https://ber4tbey.org/blacklist.json'
+  const response = await fetch(url1);
+  const data = await response.text();
+  if (data.includes(userid)){
+    console.log(
+      chalk.red.bold("Lavanstax kurallarına uymadığın için yasaklandın. ")
+  );
+  console.log(
+    chalk.red.bold("You've been banned for breaking the Lavanstax rules.")
+);
+      process.exit();
+  }
+}
 
 async function Lavansta() {
   config.DATABASE.sync();
@@ -79,9 +92,9 @@ async function Lavansta() {
 
   try {
     
-    bot.login(Config.USERNAME,Config.PASSWORD)
-    
+    await bot.login(Config.USERNAME,Config.PASSWORD)
     console.log(chalk.green.bold('✅ Login successful!'))
+    blacklistchk(bot.user.id)
   } catch(err) {
       console.log(LOGWARN + "Giriş Başarısız LavanderDestek grubundan yardım alabilirsiniz. " + err)
   }
