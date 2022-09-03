@@ -361,7 +361,7 @@ bot.on("messageCreate", async function(message) {
   let ann = message.chat.users
   
   const chatt = []
-  ann.each(user => chatt.push(user.id)) // Kullanıcı id sini alıyoruz.
+  ann.each(user => chatt.push(user.username),) // Kullanıcı adını alıyoruz.
 
   chat_id = chatt[0]
   const path = `./${chat_id}` 
@@ -369,11 +369,12 @@ bot.on("messageCreate", async function(message) {
  
   idd = (chatt[0])
     
-    var aprv = await Permit.PermitDB.findAll({ // Approve kontrol
-        where: {uid: idd}
-    });
+  const data = fs.readFileSync(`./${chat_id}.json`,
+  {encoding:'utf8', flag:'r'});
+pardata = JSON.parse(data)
 
-    if (aprv.length >= 1) {
+    if (pardata.approve == 'true') { // Approve kontrol
+        console.log("31")
         return false;
     } else {
       let warn1 = { 
