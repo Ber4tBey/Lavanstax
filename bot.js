@@ -374,7 +374,6 @@ bot.on("messageCreate", async function(message) {
 pardata = JSON.parse(data)
 
     if (pardata.approve == 'true') { // Approve kontrol
-        console.log("31")
         return false;
     } else {
       let warn1 = { 
