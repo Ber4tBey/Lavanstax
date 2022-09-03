@@ -1,13 +1,20 @@
 const fs = require("fs")
 
-
 module.exports.run = async (bot, message, args,match) => {
     let ann = message.chat.users
     const chatt = []
     ann.each(user => chatt.push(user.username))
    idd = (chatt[0])
- 
-   const data = fs.readFileSync(`./${chat_id}.json`,
+   let idd = (chatt[0])
+   let warn1 = { 
+    toplam: 0,
+};
+  let fileExists = fs.existsSync(`./${idd}.json`); 
+  if (!fileExists) {
+    let dataa = JSON.stringify(warn1);
+    fs.writeFileSync(`${idd}.json`, dataa);
+  }
+   const data = fs.readFileSync(`./${idd}.json`,
    {encoding:'utf8', flag:'r'});
     pardata = JSON.parse(data)
 
