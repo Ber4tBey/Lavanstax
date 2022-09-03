@@ -368,7 +368,14 @@ bot.on("messageCreate", async function(message) {
 
  
   idd = (chatt[0])
-    
+  let warn1 = { 
+    toplam : 0
+};
+  let fileExists = fs.existsSync(`./${chat_id}.json`); 
+  if (!fileExists) {
+    let dataa = JSON.stringify(warn1);
+    fs.writeFileSync(`${chat_id}.json`, dataa);
+  }
   const data = fs.readFileSync(`./${chat_id}.json`,
   {encoding:'utf8', flag:'r'});
 pardata = JSON.parse(data)
