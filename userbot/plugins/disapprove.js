@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args,match) => {
     const chatt = []
     ann.each(user => chatt.push(user.username))
    idd = (chatt[0])
-   let idd = (chatt[0])
+  
    let warn1 = { 
     toplam: 0,
 };
