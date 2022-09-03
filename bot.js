@@ -354,7 +354,7 @@ const Languagee = require('./language');
 const Langg = Languagee.getString('user');
 
 bot.on("messageCreate", async function(message) {
-  if (config.PM_AUTO_BAN == 'false')return;
+  if (Config.PM_AUTO_BAN == 'true'){
   if (message.author.id == bot.user.id)return;
   if (message.chat.isGroup)return;
   var mention = Config.PM_MESSAGE
@@ -421,7 +421,7 @@ bot.on("messageCreate", async function(message) {
         return await message.chat.sendMessage(mention.replace('{mention}' ,message.author.fullName).replace('{my_firstname}', bot.user.fullName).replace('{username}', message.author.username).replace('{first_name}', message.author.fullName))
     }
  
-})
+}})
       
       
 //Wlive 
