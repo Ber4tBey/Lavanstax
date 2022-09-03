@@ -2,17 +2,11 @@
 const Db = require('./sql/pmpermit');
 const Heroku = require('heroku-client');
 
-
-
-
-
-
-
 module.exports.run = async (bot, message, args,match) => {
     let ann = message.chat.users
   const chatt = []
-  ann.each(user => chatt.push(user.id))
-   idd = (chatt[0])
+  ann.each(user => chatt.push(user.username))
+   let idd = (chatt[0])
    
     var aprv = await Db.PermitDB.findAll({
         where: {uid: idd}
@@ -29,5 +23,5 @@ module.exports.run = async (bot, message, args,match) => {
 
 module.exports.config = {
     command: "approve",
-    description: ``
+    description: `DM onaylar`
 }
