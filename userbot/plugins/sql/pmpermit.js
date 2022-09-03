@@ -10,7 +10,7 @@ const { DataTypes } = require('sequelize');
 
 const PermitDB = config.DATABASE.define('Pmpermit', {
     uid: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
     
