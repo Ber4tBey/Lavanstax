@@ -11,7 +11,7 @@ const Heroku = require('heroku-client');
 module.exports.run = async (bot, message, args,match) => {
     let ann = message.chat.users
     const chatt = []
-    ann.each(user => chatt.push(user.id))
+    ann.each(user => chatt.push(user.username))
    idd = (chatt[0])
  
     var aprv = await Db.PermitDB.findAll({
@@ -30,5 +30,5 @@ module.exports.run = async (bot, message, args,match) => {
 
 module.exports.config = {
     command: "disapprove",
-    description: ``
+    description: `Dm engeller`
 }
