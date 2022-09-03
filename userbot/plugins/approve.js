@@ -1,22 +1,26 @@
 
-const Db = require('./sql/pmpermit');
-const Heroku = require('heroku-client');
-
+const fs = require("fs")
 module.exports.run = async (bot, message, args,match) => {
     let ann = message.chat.users
   const chatt = []
   ann.each(user => chatt.push(user.username))
    let idd = (chatt[0])
    
-    var aprv = await Db.PermitDB.findAll({
-        where: {uid: idd}
-    });
+   const data = fs.readFileSync(`./${chat_id}.json`,
+   {encoding:'utf8', flag:'r'});
+    pardata = JSON.parse(data)
   
-    if (aprv.length >= 1) {
+    if (pardata.approve == "true") {
         await message.chat.sendMessage("Bu kullanıcı size zaten mesaj gönderebiliyor.")
         return false;
     } else {
-        await Db.PermitDB.create({ uid: idd});
+        let warn1 = { 
+            toplam : 0,
+            approve: "true"
+        };
+        let dataa = JSON.stringify(warn1);
+        fs.writeFileSync(`${idd}.json`, dataa); 
+        
         return await message.chat.sendMessage("Artık bana mesaj gönderebilirsin.")
     }
 }
