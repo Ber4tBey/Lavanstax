@@ -1,0 +1,7 @@
+version: "1.0"
+services:
+  worker:
+    build: .
+    environment:
+      USERNAME : $USERNAME
+      PASSWORD: $PASSWORD
