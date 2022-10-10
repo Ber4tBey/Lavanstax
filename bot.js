@@ -71,7 +71,7 @@ const successemoji = "✅"
 
 
 async function blacklistchk(userid){
-  const url1 = 'https://ber4tbey.org/blacklist.json'
+  const url1 = 'https://raw.githubusercontent.com/Ber4tBey/Lavanstax/master/blacklist.json'
   const response = await fetch(url1);
   const data = await response.text();
   if (data.includes(userid)){
